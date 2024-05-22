@@ -2692,6 +2692,8 @@ code {
 }
 
 .drac-nav-link img {
-  height: 24px;
-  width: 24px;
+  max-width: 24px;
+  max-height: 24px;
+  width: auto;
+  height: auto;
 }

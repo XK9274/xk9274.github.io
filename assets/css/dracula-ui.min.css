@@ -458,7 +458,7 @@
   --white: #f8f8f2;
   --whiteSecondary: #fff;
   --whiteLight: hsla(60, 30%, 96%, 0.05);
-  --cyan: #80ffea;
+  --cyan: #3a9590;
   --cyanSecondary: #ccfff6;
   --cyanLight: rgba(128, 255, 234, 0.05);
   --green: #8aff80;
@@ -1978,7 +1978,7 @@ code {
   margin-left: 15px;
   padding-right: 5px;
   text-align: right;
-  width: 30px;
+  width: 20px;
 }
 .drac-list-black.drac-list-ordered li:before,
 .drac-list-black.drac-list-unordered li:before {

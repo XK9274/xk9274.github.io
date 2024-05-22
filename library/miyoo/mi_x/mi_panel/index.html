@@ -92,58 +92,6 @@
             </li>
             <li class="drac-box">
                 <a href="../../../.."
-                    class="
-                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#compiling-collapse" aria-expanded="false">
-                    Compiling
-                </a>
-                <div class="collapse" id="compiling-collapse">
-                    <ul class="mb-5 drac-list drac-list-none">
-                            
-    <li class="drac-box-ternary">
-        <a href="../../../compiling/hello-miyoo/"
-            class="
-            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-            Hello Miyoo
-        </a>
-    </li>
-                            
-    <li class="drac-box-ternary">
-        <a href="../../../compiling/sdl2/"
-            class="
-            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-            SDL2
-        </a>
-    </li>
-                            
-    <li class="drac-box-ternary">
-        <a href="../../../compiling/moonlight/"
-            class="
-            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-            Moonlight
-        </a>
-    </li>
-                            
-    <li class="drac-box-ternary">
-        <a href="../../../compiling/scummvm/"
-            class="
-            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-            ScummVM
-        </a>
-    </li>
-                            
-    <li class="drac-box-ternary">
-        <a href="../../../compiling/ffmpeg/"
-            class="
-            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-            FFMPEG
-        </a>
-    </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="drac-box">
-                <a href="../../../.."
                     class=" active 
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#miyoo-mini/plus-collapse" aria-expanded="false">
@@ -151,6 +99,59 @@
                 </a>
                 <div class="collapse" id="miyoo-mini/plus-collapse">
                     <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#compiling-collapse" aria-expanded="false">
+            Compiling
+        </a>
+
+        <div class="collapse" id="compiling-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../compiling/hello-miyoo/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Hello Miyoo
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../compiling/sdl2/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            SDL2
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../compiling/moonlight/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Moonlight
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../compiling/scummvm/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            ScummVM
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../compiling/ffmpeg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            FFMPEG
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
                             
     <li class="drac-box-ternary">
         <a href="#" class="
@@ -368,16 +369,32 @@
       </div>
     </a>
 
-    <div class="drac-text-center">
-        Explore the details of MI_PANEL, an integral component for initializing panel settings on Miyoo devices.
-        <br><br>
-    </div>
+    <br>
 
     <section class="drac-text-cyan-green drac-text-subheader">
         Overview of MI_PANEL:
     </section>
 
-    <p>`MI_PANEL` is responsible for setting up the display panel's parameters. It allows you to modify settings such as geometry, timing, and more. Adjustments made to these settings directly affect the hardware level of the display and should be performed with caution.</p>
+    <p>`MI_PANEL` is responsible for setting up the display panel's parameters. It allows you to modify settings such as geometry, timing, and more. Adjustments made to these settings directly affect the hardware level of the display and should be performed with caution</p>
+
+    <div class="center-container">
+      <div class="drac-info-panel">
+        <div class="drac-title">
+          Hey! some info for you!
+        </div>
+        <div class="drac-content">
+          <div class="drac-icon">
+            <img src="/assets/images/icon/icons8-info-48.png" alt="Icon">
+          </div>
+          <div class="drac-text">
+            <p>- MI_PANEL has to be initialised (in C) with the required geometry data. Miyoos version isn't publicly available however, you can reverse engineer it <br>
+            <p>  by using the panel output data below <br>
+            <br>
+            <p>- If you push in bad settings, you can always revert by rebooting!</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section class="drac-text-cyan-green drac-text-subheader">
         Example of MI_PANEL Commands:
@@ -447,6 +464,33 @@
                            <p>PolChn0        PolChn1        PolChn2        PolChn3        PolChn4<br>
                                  <p>0              0              0              0              0<br>
                         <p>/proc/mi_modules/mi_panel #<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="drac-text-cyan-green drac-text-subheader">
+        Example of MI_PANEL interaction:
+    </section>
+
+    <div class="center-container">
+        <div class="drac-terminal-background">
+            <div class="drac-terminal-panel">
+                <!-- Terminal title and icon -->
+                <div class="drac-title">
+                    <div class="drac-icon">
+                        <img src="/assets/images/icon/icons8-terminal-48.png" alt="Terminal Icon">
+                    </div>
+                </div>
+                <div class="drac-content">
+                    <div class="drac-text">
+                        <p>Change the hardware back porch setting:<br>
+                            <p>echo "settiming hbp 15" > /proc/mi_modules/mi_panel/mi_panel0<br>
+                        <br>
+                        <br>
+                        <p>Change the display width:<br>
+                            <p>echo "settiming width 320" > /proc/mi_modules/mi_panel/mi_panel0<br>
                     </div>
                 </div>
             </div>

@@ -382,11 +382,27 @@
 
     <p>For memory allocation and operations, `MI_SYS` is utilized. While `mi_gfx` relies on `MI_SYS` for memory buffers, it does not bind to any other modules and uses its own blit mechanics and functions. Before utilizing it, a panel and display should be initialized on Miyoo devices, typically done by `/dev/l` and other Miyoo-provided modules.</p>
 
+    <div class="center-container">
+      <div class="drac-info-panel">
+        <div class="drac-title">
+          Hey! some info for you!
+        </div>
+        <div class="drac-content">
+          <div class="drac-icon">
+            <img src="/assets/images/icon/icons8-info-48.png" alt="Icon">
+          </div>
+          <div class="drac-text">
+            <p>- You may find MI_SYS has a hard limit for buffers of 9-10mb!<br>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="drac-text-cyan-green drac-text-subheader">
         Example of MI_SYS status output:
     </section>
 
-    <p>To check the status of `MI_SYS`, you can examine the output from the relevant `/proc/mi_modules/MI_SYS` file:</p>
+    <p>To check the status of `MI_SYS`, you can examine the output from the relevant `/proc/mi_modules/mi_sys` file:</p>
 
     <div class="center-container">
         <div class="drac-terminal-background">

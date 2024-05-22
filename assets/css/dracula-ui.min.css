@@ -2671,3 +2671,21 @@ code {
   font-size: var(--font-sm);
   margin-top: var(--spacing-xxs);
 }
+.drac-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.drac-nav-item {
+  display: flex;
+}
+
+.drac-nav-link img {
+  height: 24px;
+  width: 24px;
+}

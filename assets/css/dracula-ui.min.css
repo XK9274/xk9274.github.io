@@ -42,8 +42,8 @@
   --spacing-56: 14rem;
   --spacing-64: 16rem;
   --rounded-lg: 0.5rem;
-  --font-md: 0.75rem;
-  --font-sm: 0.5rem;
+  --font-md: 0.5rem;
+  --font-sm: 0.4rem;
 }
 .drac-box {
   box-sizing: border-box;

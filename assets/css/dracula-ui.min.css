@@ -2406,7 +2406,7 @@ code {
   gap: var(--spacing-lg);
 }
 
-.center-container-gh {
+.center-container-gen {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2419,7 +2419,7 @@ code {
   justify-content: center;
   gap: var(--spacing-lg);
   width: 100%;
-  max-width: 600px; /* Adjust this based on your container's width */
+  max-width: 600px; 
 }
 
 .card-wrapper {
@@ -2850,4 +2850,24 @@ code {
   text-align: center;
   color: var(--white);
   font-size: var(--font-sm);
+}
+
+.sidebar .drac-text,
+.sidebar .drac-anchor {
+    font-size: var(--font-sm); /* Change this to the desired font size */
+}
+
+.sidebar .drac-anchor-secondary {
+    font-size: var(--font-sm); /* Change this to the desired font size */
+}
+
+.sidebar .drac-list li {
+    font-size: var(--font-sm); /* Change this to the desired font size */
+}
+
+.sidebar .drac-nav-container .drac-nav-link img {
+    max-width: 24px;
+    max-height: 24px;
+    width: auto;
+    height: auto;
 }

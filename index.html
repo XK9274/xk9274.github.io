@@ -60,61 +60,93 @@
     <main class="d-flex">
 
         <!-- block sidebar -->
-            <nav id="sidebar" class="sidebar drac-bg-black">
-    <div class="custom-menu">
-        <button type="button" id="sidebarCollapse" class="btn btn-primary">
-            <i class="fa fa-bars"></i>
-            <span class="sr-only">Menu</span>
-        </button>
-    </div>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Example</title>
+    <style>
+        .sidebar .drac-text,
+        .sidebar .drac-anchor {
+            font-size: var(--font-sm); /* Change this to the desired font size */
+        }
 
-    <div class="p-4">
-        
-            <img class="logo" src="/assets/images/xk_ico.png" height="150px">
-        
-        
-        <ul class="drac-nav-container">
-            <!-- GitHub link -->
-            <li class="drac-nav-item">
-                <a class="drac-nav-link" href="https://github.com/xk9274" target="_blank">
-                    <img src="/assets/images/icon/github-mark-white.png" alt="GitHub">
-                </a>
-            </li>
-            
-            <!-- Kofi link -->
-            <li class="drac-nav-item">
-                <a class="drac-nav-link" href="https://ko-fi.com/xk9274" target="_blank">
-                    <img src="/assets/images/icon/kofi_p_logo_nolabel.png" alt="Kofi">
-                </a>
-            </li>
-            
-            <!-- Onion link -->
-            <li class="drac-nav-item">
-                <a class="drac-nav-link" href="https://onionui.github.io/" target="_blank">
-                    <img src="/assets/images/icon/onion.png" alt="Onion">
-                </a>
-            </li>
-            
-            <!-- Discord link -->
-            <li class="drac-nav-item">
-                <a class="drac-nav-link" href="https://discordapp.com/users/172026334254465024" target="_blank">
-                    <img src="/assets/images/icon/icon_clyde_blurple_RGB.png" alt="Discord">
-                </a>
-            </li>
-        </ul>
-       
+        .sidebar .drac-anchor-secondary {
+            font-size: var(--font-sm); /* Change this to the desired font size */
+        }
 
-        <div class="drac-text-center">
-            
-                <span class="drac-text drac-line-height drac-text-green">XK9274 - KB</span>
-            
+        .sidebar .drac-list li {
+            font-size: var(--font-sm); /* Change this to the desired font size */
+        }
+
+        .sidebar .drac-nav-container .drac-nav-link img {
+            max-width: 24px;
+            max-height: 24px;
+            width: auto;
+            height: auto;
+        }
+
+        .drac-text-center {
+            margin-top: var(--spacing-xs); /* Adjust this value as needed */
+        }
+    </style>
+</head>
+<body>
+    <nav id="sidebar" class="sidebar drac-bg-black">
+        <div class="custom-menu">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <i class="fa fa-bars"></i>
+                <span class="sr-only">Menu</span>
+            </button>
         </div>
 
-        <hr class="drac-divider" />
-
-        <!-- block menu -->
-        <ul class="mb-5 drac-list drac-list-none">
+        <div class="p-4">
             
+                <img class="logo" src="/assets/images/xk_ico.png" height="150px">
+            
+            
+            <ul class="drac-nav-container">
+                <!-- GitHub link -->
+                <li class="drac-nav-item">
+                    <a class="drac-nav-link" href="https://github.com/xk9274" target="_blank">
+                        <img src="/assets/images/icon/github-mark-white.png" alt="GitHub">
+                    </a>
+                </li>
+                
+                <!-- Kofi link -->
+                <li class="drac-nav-item">
+                    <a class="drac-nav-link" href="https://ko-fi.com/xk9274" target="_blank">
+                        <img src="/assets/images/icon/kofi_p_logo_nolabel.png" alt="Kofi">
+                    </a>
+                </li>
+                
+                <!-- Onion link -->
+                <li class="drac-nav-item">
+                    <a class="drac-nav-link" href="https://onionui.github.io/" target="_blank">
+                        <img src="/assets/images/icon/onion.png" alt="Onion">
+                    </a>
+                </li>
+                
+                <!-- Discord link -->
+                <li class="drac-nav-item">
+                    <a class="drac-nav-link" href="https://discordapp.com/users/172026334254465024" target="_blank">
+                        <img src="/assets/images/icon/icon_clyde_blurple_RGB.png" alt="Discord">
+                    </a>
+                </li>
+            </ul>
+           
+            <div class="drac-text-center" style="margin-top: var(--spacing-sm);">
+                
+                    <span class="drac-text drac-line-height drac-text-green">XK9274 - KB</span>
+                
+            </div>
+
+            <hr class="drac-divider" />
+
+            <!-- block menu -->
+            <ul class="mb-5 drac-list drac-list-none">
+                
             <li class="drac-box">
                 <a href="."
                     class=" active 
@@ -441,7 +473,7 @@
         <a href="https://www.remove.bg/upload"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-green--hover">
-            -> Remove BG from image
+            -> Remove image BG
         </a>
     </li>
                     
@@ -449,7 +481,7 @@
         <a href="https://steward-fu.github.io/website/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-green--hover">
-            -> Steward-Fu's Website
+            -> Steward-Fu
         </a>
     </li>
             </ul>
@@ -458,10 +490,12 @@
                     </ul>
                 </div>
             </li>
-        </ul>
-        <!-- endblock -->
-    </div>
-</nav>
+            </ul>
+            <!-- endblock -->
+        </div>
+    </nav>
+</body>
+</html>
         <!-- endblock -->
 
         <nav class="divider drac-bg-purple-cyan"></nav>

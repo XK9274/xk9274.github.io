@@ -2411,12 +2411,13 @@ code {
   border-radius: var(--rounded-lg);
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 480px;
+  width: 300px;
 }
 
 .card-images {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .card-image {
@@ -2424,6 +2425,7 @@ code {
   padding: var(--spacing-sm);
   text-align: center;
   flex: 1;
+  flex-basis: 0;
 }
 
 .card-image img {
@@ -2438,6 +2440,7 @@ code {
   font-family: 'Fira Code', monospace;
   text-align: center;
   align-items: center;
+  word-wrap: break-word;
 }
 
 .drac-summary-box-wrapper {

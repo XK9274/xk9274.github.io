@@ -2846,6 +2846,18 @@ code {
   position: absolute;
   left: 0;
   top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drac-app-container .top-bar .type-text {
+  font-family: 'Fira Code', monospace;
+  color: var(--blackSecondary);
+  font-size: var(--font-sm);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
 }
 
 .drac-app-container .top-text {
@@ -2887,59 +2899,12 @@ code {
   color: var(--white);
 }
 
-/* Existing GitHub card styles */
-.github-card {
-  background-color: var(--black);
-  border-radius: var(--rounded-lg);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+.top-bar.app-gradient {
+  background: linear-gradient(135deg, var(--yellow), var(--pink));
 }
 
-.github-card .card-header {
-  background-color: var(--cyan);
-  padding: var(--spacing-sm);
-  text-align: center;
-  color: var (--white);
-  font-size: var(--font-sm); 
-  font-weight: 600;
-}
-
-.github-card .card-content {
-  padding: var(--spacing-sm);
-  display: flex;
-  align-items: center;
-}
-
-.github-card .card-content img {
-  border-radius: 50%;
-  margin-right: var(--spacing-xs);
-  width: 32px; 
-  height: 32px; 
-}
-
-.github-card .card-details {
-  flex: 1;
-}
-
-.github-card .card-details .repo-name {
-  color: var(--green);
-  font-size: var(--font-sm); 
-  margin: 0;
-}
-
-.github-card .card-details .author-name {
-  color: var(--white);
-  font-size: var(--font-xs); 
-  margin: 0;
-}
-
-.github-card .card-details .repo-description {
-  color: var(--white);
-  font-size: var(--font-xs); 
-  margin-top: var(--spacing-xxs);
+.top-bar.game-gradient {
+  background: linear-gradient(135deg, var(--pink), var(--purple));
 }
 
 /* Streamlined GitHub card styles */
@@ -3002,66 +2967,58 @@ code {
   width: 100%;
 }
 
-/* Google Drive card styles */
-.drac-google-drive-card {
-  background-color: var(--green);
+
+/* Existing GitHub card styles */
+.github-card {
+  background-color: var(--black);
   border-radius: var(--rounded-lg);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 300px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin-top: var(--spacing-sm);
 }
 
-.drac-google-drive-card .drac-card-header {
+.github-card .card-header {
   background-color: var(--cyan);
   padding: var(--spacing-sm);
   text-align: center;
-  color: var(--white);
-  font-size: var(--font-md);
+  color: var (--white);
+  font-size: var(--font-sm); 
   font-weight: 600;
 }
 
-.drac-google-drive-card .drac-card-content {
-  padding: var (--spacing-sm);
+.github-card .card-content {
+  padding: var(--spacing-sm);
   display: flex;
   align-items: center;
 }
 
-.drac-google-drive-card .drac-card-content img {
-  border-radius: var(--rounded-lg);
+.github-card .card-content img {
+  border-radius: 50%;
   margin-right: var(--spacing-xs);
-  width: 48px;
-  height: 48px;
+  width: 32px; 
+  height: 32px; 
 }
 
-.drac-google-drive-card .drac-card-details {
+.github-card .card-details {
   flex: 1;
 }
 
-.drac-google-drive-card .drac-card-details .drac-drive-file-name {
+.github-card .card-details .repo-name {
   color: var(--green);
-  font-size: var(--font-md);
+  font-size: var(--font-sm); 
   margin: 0;
 }
 
-.drac-google-drive-card .drac-card-details .drac-drive-file-type {
-  color: var(--cyan);
-  font-size: var(--font-sm);
-  margin: 0;
-}
-
-.drac-google-drive-card .drac-card-details .drac-drive-file-description {
-  color: var(--cyan);
-  font-size: var(--font-sm);
-  margin-top: var(--spacing-xxs);
-}
-
-.drac-google-drive-card .drac-card-footer {
-  background-color: var(--cyan);
-  padding: var(--spacing-xs);
-  text-align: center;
+.github-card .card-details .author-name {
   color: var(--white);
-  font-size: var(--font-sm);
+  font-size: var(--font-xs); 
+  margin: 0;
+}
+
+.github-card .card-details .repo-description {
+  color: var(--white);
+  font-size: var(--font-xs); 
+  margin-top: var(--spacing-xxs);
 }

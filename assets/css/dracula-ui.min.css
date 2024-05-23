@@ -2812,7 +2812,6 @@ code {
   margin-top: var(--spacing-xs);
 }
 
-ddd
 .drac-app-container {
   display: flex;
   flex-direction: column;
@@ -2845,7 +2844,7 @@ ddd
 
 .drac-app-container .top-text {
   font-family: 'Fira Code', monospace;
-  color: var(--white);
+  color: var(--blackSecondary);
   font-size: var(--font-2xl);
   font-weight: bold;
   text-align: center;
@@ -2882,7 +2881,7 @@ ddd
   color: var(--white);
 }
 
-/* Inherit existing GitHub card styles */
+/* Existing GitHub card styles */
 .github-card {
   background-color: var(--black);
   border-radius: var(--rounded-lg);
@@ -2935,6 +2934,49 @@ ddd
   color: var(--white);
   font-size: var(--font-sm);
   margin-top: var(--spacing-xxs);
+}
+
+/* Streamlined GitHub card styles */
+.streamlined-card {
+  max-width: 200px; /* Adjust size as needed */
+}
+
+.streamlined-card .streamlined-card-header {
+  background-color: var(--cyan);
+  padding: var(--spacing-xs);
+  text-align: center;
+  color: var(--white);
+  font-size: var(--font-sm);
+  font-weight: 600;
+}
+
+.streamlined-card .streamlined-card-content {
+  padding: var(--spacing-xs);
+  display: flex;
+  align-items: center;
+}
+
+.streamlined-card .streamlined-card-content img {
+  border-radius: 50%;
+  margin-right: var(--spacing-xs);
+  width: 32px; /* Adjust size as needed */
+  height: 32px; /* Adjust size as needed */
+}
+
+.streamlined-card .streamlined-card-details {
+  flex: 1;
+}
+
+.streamlined-card .streamlined-repo-name {
+  color: var(--green);
+  font-size: var(--font-sm);
+  margin: 0;
+}
+
+.streamlined-card .streamlined-author-name {
+  color: var(--white);
+  font-size: var(--font-xs);
+  margin: 0;
 }
 
 /* Google Drive card styles */

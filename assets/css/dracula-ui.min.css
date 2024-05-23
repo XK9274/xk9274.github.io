@@ -2757,13 +2757,13 @@ code {
 }
 
 .drac-google-drive-card .drac-card-details .drac-drive-file-type {
-  color: var(--white);
+  color: var(--cyan);
   font-size: var(--font-sm);
   margin: 0;
 }
 
 .drac-google-drive-card .drac-card-details .drac-drive-file-description {
-  color: var(--white);
+  color: var(--cyan);
   font-size: var(--font-sm);
   margin-top: var(--spacing-xxs);
 }

@@ -402,6 +402,14 @@
 </section>
 
 <p>The Union toolchain is a pre-built toolchain by Shauninman. It contains everything you need to compile for the Miyoo Mini(&amp;Plus)</p>
+<section class="drac-text-cyan-green drac-text-subheader">
+WSL (Windows Subsystem for Linux)<br>
+</section>
+<p>WSL, or Windows Subsystem for Linux, is a handy feature for Windows users who want to run Linux without all the hassle. It lets you open up a Linux terminal right on your Windows machine, so you can use Linux commands and tools without needing a separate Linux computer or a virtual machine. It's perfect for developers and anyone who likes the flexibility of Linux but prefers sticking with Windows for their day-to-day stuff.</p>
+<section class="drac-text-cyan-green drac-text-subheader">
+Docker<br>
+</section>
+<p>Docker is like having a magic box for your apps. You put your application and everything it needs to run (like code, libraries, and settings) into this box, called a container. Then, you can run this container on any machine with Docker installed, and it will work exactly the same. It's super useful because it means your app can run anywhere, from your laptop to a big server in the cloud, without any weird issues popping up. Plus, it makes sharing your app with others a breeze.. We use Docker for compiling as the container can be started/stopped at will and also resets the rootfs every boot.</p>
 <div class="content-wrapper">
   <div class="card-wrapper">
     <div class="card-images">
@@ -537,6 +545,25 @@ Step 6: Clone the Repository and Build the Docker Image
 </code></pre></div></p>
 </li>
 </ol>
+<div class="center-container">
+  <div class="drac-terminal-background">
+    <div class="drac-terminal-panel">
+      <div class="drac-title">
+        <div class="drac-icon">
+          <img src="/assets/images/icon/icons8-terminal-48.png" alt="Icon">
+        </div>
+      </div>
+      <div class="drac-content">
+        <div class="drac-text">
+            <p>mattpc@MattPC:~/union-miyoomini-toolchain$ make shell<br>
+            <p>docker run -it --rm -v "/home/mattpc/union-miyoomini-toolchain/workspace":/root/workspace miyoomini-toolchain /bin/bash<br>
+            <p>root@7ee8499587da:~/workspace#<br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <p>You're now in a containerised shell and can begin compiling; why not try this script out to compile your first Miyoo compatible binary? 
 <a href="/library/miyoo/compiling/hello-miyoo/" class="drac-text-green">The Hello-Miyoo test app</a></p></p>
     </article>

@@ -2551,32 +2551,35 @@ code {
 .drac-info-panel .drac-text p {
   margin: 0;
 }
-
 .drac-terminal-background {
   background-color: var(--cyan);
   border-radius: var(--rounded-lg);
   padding: var(--spacing-xs);
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .drac-terminal-panel {
   background-color: var(--blackSecondary);
   border-radius: var(--rounded-lg);
   font-family: 'Fira Code', monospace;
-  max-width: 1178px;
+  width: 100%;
+  max-width: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .drac-terminal-panel .drac-title {
   background-color: var(--cyan);
-  /* padding: var(--spacing-xs); */
   color: var(--white);
   font-size: var(--font-md);
   font-weight: 600;
   text-align: center;
   display: flex;
   align-items: center;
+  padding: var(--spacing-xs);
 }
 
 .drac-terminal-panel .drac-icon {
@@ -2601,27 +2604,60 @@ code {
   border-bottom-left-radius: var(--rounded-lg);
   border-bottom-right-radius: var(--rounded-lg);
   text-align: left;
-  opacity: 0.80;  
+  flex: 1;
+  width: 100%;
 }
 
 .drac-terminal-panel .drac-text {
   color: #f8f8f2; 
   font-family: 'Fira Code', monospace; 
   font-size: 0.75rem;
-  line-height: 0.60;
+  line-height: 1.2;
   padding: 0.25rem 0.5rem; 
   border-radius: var(--rounded-sm);
-  white-space: pre; 
+  white-space: pre-wrap; 
   overflow-x: auto;
   flex: 1;
   text-align: left;
-  opacity: 0.80;  
 }
 
 .drac-terminal-panel .drac-text p {
   margin: 0;
 }
 
+@media (max-width: 768px) {
+  .drac-terminal-panel .drac-title {
+    font-size: var(--font-sm);
+    padding: var(--spacing-xs);
+  }
+
+  .drac-terminal-panel .drac-text {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.25rem;
+  }
+  
+  .drac-terminal-panel .drac-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .drac-terminal-panel .drac-title {
+    font-size: var(--font-xs);
+    padding: var(--spacing-xxs);
+  }
+
+  .drac-terminal-panel .drac-text {
+    font-size: 0.55rem;
+    padding: 0.25rem 0.25rem;
+  }
+
+  .drac-terminal-panel .drac-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
 
 .github-card {
   background-color: var(--black);

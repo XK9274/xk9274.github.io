@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://xk9274.github.io/library/a30/research/disable_blue_led/</loc>
+         <lastmod>2024-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://xk9274.github.io/library/a30/research/events/</loc>
          <lastmod>2024-05-23</lastmod>
          <changefreq>daily</changefreq>
@@ -27,6 +32,11 @@
     </url>
     <url>
          <loc>https://xk9274.github.io/library/misc/docker/</loc>
+         <lastmod>2024-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xk9274.github.io/library/miyoo/apps/</loc>
          <lastmod>2024-05-23</lastmod>
          <changefreq>daily</changefreq>
     </url>

@@ -2854,15 +2854,15 @@ code {
 
 .sidebar .drac-text,
 .sidebar .drac-anchor {
-    font-size: var(--font-sm); /* Change this to the desired font size */
+    font-size: var(--font-sm);
 }
 
 .sidebar .drac-anchor-secondary {
-    font-size: var(--font-sm); /* Change this to the desired font size */
+    font-size: var(--font-sm);
 }
 
 .sidebar .drac-list li {
-    font-size: var(--font-sm); /* Change this to the desired font size */
+    font-size: var(--font-sm);
 }
 
 .sidebar .drac-nav-container .drac-nav-link img {
@@ -2876,14 +2876,56 @@ code {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 20px; /* Adjust the gap between the two elements as needed */
+    gap: 20px; 
 }
 
-.drac-code-c {
-    background-color: #1b1b1b;
-    color: #8aff80;
-    font-family: 'Fira Code', monospace;
-    padding: 10px;
-    border-radius: 5px;
-    overflow-x: auto;
+.drac-image-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--rounded-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 640px;
+  margin: var(--spacing-sm);
 }
+
+.drac-image-card-images {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(--green);
+}
+
+.drac-image-card-image {
+  padding: var(--spacing-sm);
+  text-align: center;
+  flex: 1;
+  flex-basis: 0;
+}
+
+.drac-image-card-image img {
+  width: 100%;
+  border-radius: var(--rounded-lg);
+}
+
+.drac-image-card-text {
+  background-color: var(--cyan);
+  padding: var(--spacing-xs);
+  color: var(--white);
+  font-family: 'Fira Code', monospace;
+  text-align: center;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+.drac-image-card-text p {
+  margin: var(--spacing-xxs) 0;
+}
+
+.drac-image-card-text a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: var(--spacing-xs);
+}
+

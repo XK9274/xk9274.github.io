@@ -2677,6 +2677,7 @@ code {
   font-size: var(--font-sm);
   margin-top: var(--spacing-xxs);
 }
+
 .drac-nav-container {
   display: flex;
   align-items: center;
@@ -2696,4 +2697,18 @@ code {
   max-height: 24px;
   width: auto;
   height: auto;
+}
+
+.drac-rounded-img-large {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: var(--spacing-sm);
+    border-radius: var(--rounded-lg);
+}
+
+.drac-rounded-img-small {
+    width: 100%;
+    max-width: 600px;
+    margin-top: var(--spacing-sm);
+    border-radius: var(--rounded-lg);
 }

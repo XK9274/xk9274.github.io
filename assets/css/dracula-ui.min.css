@@ -454,8 +454,8 @@
   --blackSecondary: #2b2b2b;
   --blackTernary: #a7abbe;
   --blackLight: rgba(33, 34, 44, 0.05);
-  --grey: #3c413c;
-  --greySecondary: #626784;
+  --grey: #43c413c;
+  --greySecondary: #30392f;
   --greyTernary: #b6b9c9;
   --greyLight: rgba(65, 69, 88, 0.05);
   --white: #f8f8f2;
@@ -2812,6 +2812,12 @@ code {
   margin-top: var(--spacing-xs);
 }
 
+.center-container-gen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .drac-app-container {
   display: flex;
   flex-direction: column;
@@ -2819,6 +2825,7 @@ code {
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: var(--spacing-sm);
+  width: 400px;
 }
 
 .drac-app-container .top-section {
@@ -2827,25 +2834,24 @@ code {
   height: 85px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: var(--spacing-sm);
   position: relative;
 }
 
-.drac-app-container .top-image {
+.drac-app-container .top-bar {
+  width: 20px;
+  height: 100%;
+  background-color: var(--white);
   position: absolute;
-  top: 50%;
-  left: var(--spacing-sm);
-  transform: translateY(-50%);
-  max-width: 80px;
-  max-height: 80px;
-  border-radius: var(--rounded-lg);
+  left: 0;
+  top: 0;
 }
 
 .drac-app-container .top-text {
   font-family: 'Fira Code', monospace;
   color: var(--blackSecondary);
-  font-size: var(--font-xl); 
+  font-size: var(--font-xl);
   font-weight: bold;
   text-align: center;
   flex: 1;
@@ -2855,29 +2861,29 @@ code {
 }
 
 .drac-app-container .bottom-section {
-  background-color: var(--grey);
+  background-color: var(--greySecondary);
   flex: 1;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   padding: var(--spacing-md);
 }
 
 .drac-app-container .manual-card {
   flex: 1;
   padding-right: var(--spacing-md);
+  width: 100%;
 }
 
 .drac-app-container .manual-card h2 {
-  font-size: var(--font-xl); 
+  font-size: var(--font-xl);
   font-weight: 600;
   margin: var(--spacing-sm) 0;
 }
 
 .drac-app-container .manual-card p {
   margin: var(--spacing-xs) 0;
-  font-size: var(--font-sm); 
+  font-size: var(--font-sm);
   color: var(--white);
 }
 
@@ -2938,11 +2944,20 @@ code {
 
 /* Streamlined GitHub card styles */
 .streamlined-card {
-  max-width: 200px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--rounded-lg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  margin-top: var(--spacing-sm);
 }
 
 .streamlined-card .streamlined-card-header {
-  background-color: var(--black);
+  background-color: var(--cyan);
   padding: var(--spacing-xs);
   text-align: center;
   color: var(--white);
@@ -2956,27 +2971,35 @@ code {
   align-items: center;
 }
 
-.streamlined-card .streamlined-card-content img {
-  border-radius: 50%;
-  margin-right: var(--spacing-xs);
-  width: 32px;
-  height: 32px; 
-}
-
 .streamlined-card .streamlined-card-details {
   flex: 1;
+  padding: var(--spacing-xs);
+  position: relative;
 }
 
 .streamlined-card .streamlined-repo-name {
   color: var(--green);
-  font-size: var(--font-xs); 
+  font-size: var(--font-xs);
   margin: 0;
 }
 
 .streamlined-card .streamlined-author-name {
   color: var(--greenSecondary);
-  font-size: var(--font-xxs); 
+  font-size: var(--font-xxs);
   margin: 0;
+}
+
+.streamlined-card .streamlined-card-details .repo-description {
+  color: var(--white);
+  font-size: var(--font-xs);
+  margin-top: var(--spacing-xxs);
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  width: 100%;
 }
 
 /* Google Drive card styles */
@@ -3001,7 +3024,7 @@ code {
 }
 
 .drac-google-drive-card .drac-card-content {
-  padding: var(--spacing-sm);
+  padding: var (--spacing-sm);
   display: flex;
   align-items: center;
 }

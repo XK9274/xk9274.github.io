@@ -609,7 +609,74 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p></p>
+        <p><div class="center-container-gen">
+    <div class="drac-app-container">
+        <div class="top-section">
+            <img src="/assets/images/icon/syncthing.png" alt="Image" class="top-image">
+            <div class="top-text">Syncthing</div>
+        </div>
+        <div class="bottom-section">
+            <!-- Manual format -->
+            <div class="manual-card">
+                <h2>Syncthing</h2>
+                <p>Type: Full app</p>
+                <p>Description: Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes. Your data is your data alone and you deserve to choose where it is stored, whether it is shared with some third party, and how it’s transmitted over the internet.</p>
+            </div>
+
+            <!-- GitHub or Google Drive format -->
+            <div id="dynamic-card" class="github-card"></div>
+        </div>
+        <script src="/assets/js/ghq.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const repoUrl = 'https://api.github.com/repos/XK9274/ssd20x-SDK-en-mirror';
+                fetchGitHubRepo(repoUrl, displayCard);
+
+                // Simulating Google Drive card logic
+                // Uncomment below line to use Google Drive card logic
+                // displayGoogleDriveCard();
+            });
+
+            function displayCard(repoData, userData) {
+                const githubCard = document.getElementById('dynamic-card');
+
+                githubCard.innerHTML = `
+                    <a href="${repoData.html_url}" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="card-header">GitHub Repo</div>
+                        <div class="card-content">
+                            <img src="${userData.avatar_url}" alt="${userData.login}'s avatar">
+                            <div class="card-details">
+                                <p class="repo-name">${repoData.name}</p>
+                                <p class="author-name">by ${userData.login}</p>
+                                <p class="repo-description">${repoData.description}</p>
+                            </div>
+                        </div>
+                    </a>
+                `;
+            }
+
+            function displayGoogleDriveCard() {
+                const googleDriveCard = document.getElementById('dynamic-card');
+
+                googleDriveCard.className = "drac-google-drive-card";
+                googleDriveCard.innerHTML = `
+                    <div class="drac-card-header">Google Drive File</div>
+                    <div class="drac-card-content">
+                        <img src="/path/to/google-drive-icon.png" alt="Google Drive File">
+                        <div class="drac-card-details">
+                            <p class="drac-drive-file-name">Sample File</p>
+                            <p class="drac-drive-file-type">PDF Document</p>
+                            <p class="drac-drive-file-description">This is a sample file description.</p>
+                        </div>
+                    </div>
+                    <div class="drac-card-footer">
+                        <a href="https://drive.google.com/your-file-link" target="_blank">Download</a>
+                    </div>
+                `;
+            }
+        </script>
+    </div>
+</div></p>
     </article>
 </section>
             <!-- endblock -->

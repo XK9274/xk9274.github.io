@@ -647,18 +647,18 @@
         </div>
     </div>
 
-    <br>
+
 
     <section class="drac-text-cyan-green drac-text-subheader">
         Overview of MI_DISP:
     </section>
 
-    <p>MI_DISP is another interesting one, where if you enable it within a binary that binary must continue to run or MI_DISP will be disabled. An example of this is also /dev/l which initialises MI_DISP and holds it open by entering a loop, the loop breaks if you send a -2 kill into /dev/l <br>
-    <br>
-    I've found mo current way to read back pushed in CSC changes so if someone finds a way please let me know! (Store a local copy of what you set is the way around this)<br>
-    <br>
+    <p>MI_DISP is another interesting one, where if you enable it within a binary that binary must continue to run or MI_DISP will be disabled. An example of this is also /dev/l which initialises MI_DISP and holds it open by entering a loop, the loop breaks if you send a -2 kill into /dev/l 
+
+    I've found mo current way to read back pushed in CSC changes so if someone finds a way please let me know! (Store a local copy of what you set is the way around this)
+
     Modifying MI_DISP values is not a permanent change and can be reset by pushing in the default or rebooting!
-    <br>
+
     </p>
 
     <div class="center-container-gen">
@@ -671,9 +671,9 @@
             <img src="/assets/images/icon/icons8-info-48.png" alt="Icon">
           </div>
           <div class="drac-text">
-            <p>- If you disable mi_disp by calling /dev/l you can spawn /dev/l again by calling `cat /proc/ls`<br>
-            <br>
-            <p>- If mi_disp is not currently running you can *NOT* push in CSC changes! (No colour changes ie: blue light filter will stop working)<br>
+            <p>- If you disable mi_disp by calling /dev/l you can spawn /dev/l again by calling `cat /proc/ls`
+
+            <p>- If mi_disp is not currently running you can *NOT* push in CSC changes! (No colour changes ie: blue light filter will stop working)
           </div>
         </div>
       </div>
@@ -693,22 +693,22 @@
                 </div>
                 <div class="drac-content">
                     <div class="drac-text">
-                        <p>CatModuleInfo: cat /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>GetCapFrame: echo getcapframe [devid] [layerid] [path] > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>CheckFramePts: echo checkframepts [layeid] [portid] [ON/OFF] > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>Dumpframe: echo dumpframe [layerid] [portid] [path] > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>StopGetBuff: echo stopgetbuff [layerid] [portid] [ON/OFF] > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>SetBgcolor: echo bgcolor [devid] [value] > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>SetCsc: echo csc [devid] [CscMatrix] [Contrast] [Hue] [Luma] [Saturation] [Sharpness] [Gain] > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>setcolortemp: echo colortemp [devid] [BlueOffset] [GreenOffset] [RedOffset] [BlueColor] [GreenColor] [RedColor] > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>setrotatemode: echo rotate [layerid] [0/1/2] > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>setcrop: echo crop [layerid] [portid] [x] [y] [width] [height] > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>hideport: echo hide [layerid] [portid] > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>showport: echo show [layerid] [portid] > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>pauseport: echo pause [layerid] [portid] > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>resumeport: echo resume [layerid] [portid] > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>stepport: echo step [layerid] [portid] > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>clearport: echo clear [layerid] [portid] > /proc/mi_modules/mi_disp/mi_disp0<br>
+                        <p>CatModuleInfo: cat /proc/mi_modules/mi_disp/mi_disp0
+                        <p>GetCapFrame: echo getcapframe [devid] [layerid] [path] > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>CheckFramePts: echo checkframepts [layeid] [portid] [ON/OFF] > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>Dumpframe: echo dumpframe [layerid] [portid] [path] > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>StopGetBuff: echo stopgetbuff [layerid] [portid] [ON/OFF] > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>SetBgcolor: echo bgcolor [devid] [value] > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>SetCsc: echo csc [devid] [CscMatrix] [Contrast] [Hue] [Luma] [Saturation] [Sharpness] [Gain] > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>setcolortemp: echo colortemp [devid] [BlueOffset] [GreenOffset] [RedOffset] [BlueColor] [GreenColor] [RedColor] > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>setrotatemode: echo rotate [layerid] [0/1/2] > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>setcrop: echo crop [layerid] [portid] [x] [y] [width] [height] > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>hideport: echo hide [layerid] [portid] > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>showport: echo show [layerid] [portid] > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>pauseport: echo pause [layerid] [portid] > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>resumeport: echo resume [layerid] [portid] > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>stepport: echo step [layerid] [portid] > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>clearport: echo clear [layerid] [portid] > /proc/mi_modules/mi_disp/mi_disp0
                     </div>
                 </div>
             </div>
@@ -729,100 +729,100 @@
                 </div>
                 <div class="drac-content">
                     <div class="drac-text">
-                        <p>-----------------------------------------Common info for mi_disp-----------------------------------------<br>
-                          <p>ChnNum  EnChnNum  PassNum  InPortNum  OutPortNum  CollectSize<br>
-                              <p>17         1        1          1           0            0<br>
-                        <br>
-                        ----------------------CMDQ kickoff counter-----------------------<br>
-                        <br>
-                        ------------------------------Common info formi_disp only dump enabled chn------------------------------<br>
-                          <p>ChnId PassNum  EnInPNum  EnOutPNum  MMAHeapName<br>
-                              <p>0       0       1          0       (null)<br>
-                        <br>
-                        -------------------------Input port common info for mi_disp  only dump enabled port---------------------<br>
-                          <p>ChnId  PassId  PortId  user_buf_quota  UsrInjectQ_cnt  BindInQ_cnt     TotalPendingBuf_size  usrLockedInjectCnt<br>
-                              <p>0       0       0               4               0            0                        0                   0<br>
-                          <p>ChnId  PassId  PortId  newPulseQ_cnt  nextTodoPulseQ_cnt     curWorkingQ_cnt     workingTask_cnt      lazzyRewindTask_cnt<br>
-                              <p>0       0       0              0                   0                   0                   0                        0<br>
-                        <br>
-                          <p>ChnId  PassId  PortId  Enable  bind_module_id  bind_module_name  bind_ChnId  bind_PortId bind_Type   bind_Param  enable<br>
-                        <br>
-                          <p>ChnId  PassId  PortId   LowLatencyDelayMs     LastStaticDelayAveMS<br>
-                        <br>
-                          <p>ChnId  PassId  PortId  SrcFrmrate  DstFrmrate RealSrcFrmrate    FPS   FinishCnt   RewindCnt<br>
-                              <p>0       0       0        0/ 0        0/ 0         0/   0   0.00           0           0<br>
-                        <br>
-                        ----------------------Output port common info for mi_disp  only for enabled port---------------------<br>
-                          <p>ChnId  PassId  PortId usrDepth  BufCntQuota  usrLockedCnt  totalOutPortInUsed   DrvBkRefFifoQ_cnt  DrvBkRefFifoQ_size<br>
-                          <p>ChnId  PassId  PortId RealDstFrmrate    FPS  UsrGetFifoQ_cnt UsrGetFifoQ_size  UsrGetFifoQ_seqnum  UsrGetFifoQ_discardnum<br>
-                          <p>ChnId  PassId  PortId  workingTask_cnt finishedTask_cnt<br>
-                          <p>ChnId  PassId  PortId RealDstFrmrate    FPS   FinishCnt   RewindCnt    GetTotalCnt    GetOkCnt<br>
-                        <br>
-                        ----------------------------------------BindPeerInputPortList---------------------------------------<br>
-                          <p>ChnId  PassId  PortId  Enable  bind_module_id  bind_module_name  bind_ChnId  bind_PortId bind_Type   bind_Param  enable<br>
-                        ============================== Private DISP0 Info ============================<br>
-                         <p>DevStatus         IrqNum         IrqCnt        BgColor<br>
-                                 <p>1             57          27436         800080<br>
-                         <p>Interface      DevTiming      CscMatrix           Luma       Contrast            Hue     Saturation      Sharpness<br>
-                               <p>LCD        UNKNOWN              3             42             50             50             50              0<br>
-                        --------------------------------- Layer Info ---------------------------------<br>
-                           <p>LayerId    BindedDevID     LayerWidth    LayerHeight<br>
-                                 <p>0              0              0              0<br>
-                           <p>LayerId   LayDispWidth  LayDispHeight     Toleration     rotatemode<br>
-                                 <p>0              0              0              0           NONE<br>
-                        --------------------------------- Layer0 InputPort Info ---------------------------------<br>
-                            <p>PortId    enable CurStatus     src_w     src_h    crop_x    crop_y    crop_w    crop_h    show_x    show_y    show_w    show_h<br>
-                                <p>0         1         0       640       480         0         0         0         0         0         0       640       480<br>
-                                <p>1         0         0         0         0         0         0         0         0         0         0         0         0<br>
-                                <p>2         0         0         0         0         0         0         0         0         0         0         0         0<br>
-                                <p>3         0         0         0         0         0         0         0         0         0         0         0         0<br>
-                                <p>4         0         0         0         0         0         0         0         0         0         0         0         0<br>
-                                <p>5         0         0         0         0         0         0         0         0         0         0         0         0<br>
-                                <p>6         0         0         0         0         0         0         0         0         0         0         0         0<br>
-                                <p>7         0         0         0         0         0         0         0         0         0         0         0         0<br>
-                                <p>8         0         0         0         0         0         0         0         0         0         0         0         0<br>
-                                <p>9         0         0         0         0         0         0         0         0         0         0         0         0<br>
-                                <p>10         0         0         0         0         0         0         0         0         0         0         0         0<br>
-                                <p>11         0         0         0         0         0         0         0         0         0         0         0         0<br>
-                                <p>12         0         0         0         0         0         0         0         0         0         0         0         0<br>
-                                <p>13         0         0         0         0         0         0         0         0         0         0         0         0<br>
-                                <p>14         0         0         0         0         0         0         0         0         0         0         0         0<br>
-                                <p>15         0         0         0         0         0         0         0         0         0         0         0         0<br>
-                            <p>PortId     RecvBufCnt      RecvBuf_W      RecvBuf_H      Content_W      Content_H  RecvBufStride         PixFmt       syncmode<br>
-                                <p>0              0              0              0              0              0              0    yuv422_yuyv        FreeRun<br>
-                                <p>1              0              0              0              0              0              0    yuv422_yuyv        Invalid<br>
-                                <p>2              0              0              0              0              0              0    yuv422_yuyv        Invalid<br>
-                                <p>3              0              0              0              0              0              0    yuv422_yuyv        Invalid<br>
-                                <p>4              0              0              0              0              0              0    yuv422_yuyv        Invalid<br>
-                                <p>5              0              0              0              0              0              0    yuv422_yuyv        Invalid<br>
-                                <p>6              0              0              0              0              0              0    yuv422_yuyv        Invalid<br>
-                                <p>7              0              0              0              0              0              0    yuv422_yuyv        Invalid<br>
-                                <p>8              0              0              0              0              0              0    yuv422_yuyv        Invalid<br>
-                                <p>9              0              0              0              0              0              0    yuv422_yuyv        Invalid<br>
-                                <p>10              0              0              0              0              0              0    yuv422_yuyv        Invalid<br>
-                                <p>11              0              0              0              0              0              0    yuv422_yuyv        Invalid<br>
-                                <p>12              0              0              0              0              0              0    yuv422_yuyv        Invalid<br>
-                                <p>13              0              0              0              0              0              0    yuv422_yuyv        Invalid<br>
-                                <p>14              0              0              0              0              0              0    yuv422_yuyv        Invalid<br>
-                                <p>15              0              0              0              0              0              0    yuv422_yuyv        Invalid<br>
-                            <p>PortId   OnScreenTask      FiredTask     PendingTak   LastDropTask    DropTaskCnt    StepTaskCnt  bClearAllTask            fps<br>
-                                <p>0         (null)         (null)         (null)         (null)              0              0              0              0<br>
-                                <p>1         (null)         (null)         (null)         (null)              0              0              0              0<br>
-                                <p>2         (null)         (null)         (null)         (null)              0              0              0              0<br>
-                                <p>3         (null)         (null)         (null)         (null)              0              0              0              0<br>
-                                <p>4         (null)         (null)         (null)         (null)              0              0              0              0<br>
-                                <p>5         (null)         (null)         (null)         (null)              0              0              0              0<br>
-                                <p>6         (null)         (null)         (null)         (null)              0              0              0              0<br>
-                                <p>7         (null)         (null)         (null)         (null)              0              0              0              0<br>
-                                <p>8         (null)         (null)         (null)         (null)              0              0              0              0<br>
-                                <p>9         (null)         (null)         (null)         (null)              0              0              0               0<br>
-                                <p>10         (null)         (null)         (null)         (null)              0              0              0               0<br>
-                                <p>11         (null)         (null)         (null)         (null)              0              0              0               0<br>
-                                <p>12         (null)         (null)         (null)         (null)              0              0              0               0<br>
-                                <p>13         (null)         (null)         (null)         (null)              0              0              0               0<br>
-                                <p>14         (null)         (null)         (null)         (null)              0              0              0               0<br>
-                                <p>15         (null)         (null)         (null)         (null)              0              0              0               0<br>
-                        <p>/proc/mi_modules/mi_panel #<br>
+                        <p>-----------------------------------------Common info for mi_disp-----------------------------------------
+                          <p>ChnNum  EnChnNum  PassNum  InPortNum  OutPortNum  CollectSize
+                              <p>17         1        1          1           0            0
+
+                        ----------------------CMDQ kickoff counter-----------------------
+
+                        ------------------------------Common info formi_disp only dump enabled chn------------------------------
+                          <p>ChnId PassNum  EnInPNum  EnOutPNum  MMAHeapName
+                              <p>0       0       1          0       (null)
+
+                        -------------------------Input port common info for mi_disp  only dump enabled port---------------------
+                          <p>ChnId  PassId  PortId  user_buf_quota  UsrInjectQ_cnt  BindInQ_cnt     TotalPendingBuf_size  usrLockedInjectCnt
+                              <p>0       0       0               4               0            0                        0                   0
+                          <p>ChnId  PassId  PortId  newPulseQ_cnt  nextTodoPulseQ_cnt     curWorkingQ_cnt     workingTask_cnt      lazzyRewindTask_cnt
+                              <p>0       0       0              0                   0                   0                   0                        0
+
+                          <p>ChnId  PassId  PortId  Enable  bind_module_id  bind_module_name  bind_ChnId  bind_PortId bind_Type   bind_Param  enable
+
+                          <p>ChnId  PassId  PortId   LowLatencyDelayMs     LastStaticDelayAveMS
+
+                          <p>ChnId  PassId  PortId  SrcFrmrate  DstFrmrate RealSrcFrmrate    FPS   FinishCnt   RewindCnt
+                              <p>0       0       0        0/ 0        0/ 0         0/   0   0.00           0           0
+
+                        ----------------------Output port common info for mi_disp  only for enabled port---------------------
+                          <p>ChnId  PassId  PortId usrDepth  BufCntQuota  usrLockedCnt  totalOutPortInUsed   DrvBkRefFifoQ_cnt  DrvBkRefFifoQ_size
+                          <p>ChnId  PassId  PortId RealDstFrmrate    FPS  UsrGetFifoQ_cnt UsrGetFifoQ_size  UsrGetFifoQ_seqnum  UsrGetFifoQ_discardnum
+                          <p>ChnId  PassId  PortId  workingTask_cnt finishedTask_cnt
+                          <p>ChnId  PassId  PortId RealDstFrmrate    FPS   FinishCnt   RewindCnt    GetTotalCnt    GetOkCnt
+
+                        ----------------------------------------BindPeerInputPortList---------------------------------------
+                          <p>ChnId  PassId  PortId  Enable  bind_module_id  bind_module_name  bind_ChnId  bind_PortId bind_Type   bind_Param  enable
+                        ============================== Private DISP0 Info ============================
+                         <p>DevStatus         IrqNum         IrqCnt        BgColor
+                                 <p>1             57          27436         800080
+                         <p>Interface      DevTiming      CscMatrix           Luma       Contrast            Hue     Saturation      Sharpness
+                               <p>LCD        UNKNOWN              3             42             50             50             50              0
+                        --------------------------------- Layer Info ---------------------------------
+                           <p>LayerId    BindedDevID     LayerWidth    LayerHeight
+                                 <p>0              0              0              0
+                           <p>LayerId   LayDispWidth  LayDispHeight     Toleration     rotatemode
+                                 <p>0              0              0              0           NONE
+                        --------------------------------- Layer0 InputPort Info ---------------------------------
+                            <p>PortId    enable CurStatus     src_w     src_h    crop_x    crop_y    crop_w    crop_h    show_x    show_y    show_w    show_h
+                                <p>0         1         0       640       480         0         0         0         0         0         0       640       480
+                                <p>1         0         0         0         0         0         0         0         0         0         0         0         0
+                                <p>2         0         0         0         0         0         0         0         0         0         0         0         0
+                                <p>3         0         0         0         0         0         0         0         0         0         0         0         0
+                                <p>4         0         0         0         0         0         0         0         0         0         0         0         0
+                                <p>5         0         0         0         0         0         0         0         0         0         0         0         0
+                                <p>6         0         0         0         0         0         0         0         0         0         0         0         0
+                                <p>7         0         0         0         0         0         0         0         0         0         0         0         0
+                                <p>8         0         0         0         0         0         0         0         0         0         0         0         0
+                                <p>9         0         0         0         0         0         0         0         0         0         0         0         0
+                                <p>10         0         0         0         0         0         0         0         0         0         0         0         0
+                                <p>11         0         0         0         0         0         0         0         0         0         0         0         0
+                                <p>12         0         0         0         0         0         0         0         0         0         0         0         0
+                                <p>13         0         0         0         0         0         0         0         0         0         0         0         0
+                                <p>14         0         0         0         0         0         0         0         0         0         0         0         0
+                                <p>15         0         0         0         0         0         0         0         0         0         0         0         0
+                            <p>PortId     RecvBufCnt      RecvBuf_W      RecvBuf_H      Content_W      Content_H  RecvBufStride         PixFmt       syncmode
+                                <p>0              0              0              0              0              0              0    yuv422_yuyv        FreeRun
+                                <p>1              0              0              0              0              0              0    yuv422_yuyv        Invalid
+                                <p>2              0              0              0              0              0              0    yuv422_yuyv        Invalid
+                                <p>3              0              0              0              0              0              0    yuv422_yuyv        Invalid
+                                <p>4              0              0              0              0              0              0    yuv422_yuyv        Invalid
+                                <p>5              0              0              0              0              0              0    yuv422_yuyv        Invalid
+                                <p>6              0              0              0              0              0              0    yuv422_yuyv        Invalid
+                                <p>7              0              0              0              0              0              0    yuv422_yuyv        Invalid
+                                <p>8              0              0              0              0              0              0    yuv422_yuyv        Invalid
+                                <p>9              0              0              0              0              0              0    yuv422_yuyv        Invalid
+                                <p>10              0              0              0              0              0              0    yuv422_yuyv        Invalid
+                                <p>11              0              0              0              0              0              0    yuv422_yuyv        Invalid
+                                <p>12              0              0              0              0              0              0    yuv422_yuyv        Invalid
+                                <p>13              0              0              0              0              0              0    yuv422_yuyv        Invalid
+                                <p>14              0              0              0              0              0              0    yuv422_yuyv        Invalid
+                                <p>15              0              0              0              0              0              0    yuv422_yuyv        Invalid
+                            <p>PortId   OnScreenTask      FiredTask     PendingTak   LastDropTask    DropTaskCnt    StepTaskCnt  bClearAllTask            fps
+                                <p>0         (null)         (null)         (null)         (null)              0              0              0              0
+                                <p>1         (null)         (null)         (null)         (null)              0              0              0              0
+                                <p>2         (null)         (null)         (null)         (null)              0              0              0              0
+                                <p>3         (null)         (null)         (null)         (null)              0              0              0              0
+                                <p>4         (null)         (null)         (null)         (null)              0              0              0              0
+                                <p>5         (null)         (null)         (null)         (null)              0              0              0              0
+                                <p>6         (null)         (null)         (null)         (null)              0              0              0              0
+                                <p>7         (null)         (null)         (null)         (null)              0              0              0              0
+                                <p>8         (null)         (null)         (null)         (null)              0              0              0              0
+                                <p>9         (null)         (null)         (null)         (null)              0              0              0               0
+                                <p>10         (null)         (null)         (null)         (null)              0              0              0               0
+                                <p>11         (null)         (null)         (null)         (null)              0              0              0               0
+                                <p>12         (null)         (null)         (null)         (null)              0              0              0               0
+                                <p>13         (null)         (null)         (null)         (null)              0              0              0               0
+                                <p>14         (null)         (null)         (null)         (null)              0              0              0               0
+                                <p>15         (null)         (null)         (null)         (null)              0              0              0               0
+                        <p>/proc/mi_modules/mi_panel #
                     </div>
                 </div>
             </div>
@@ -843,12 +843,12 @@
                 </div>
                 <div class="drac-content">
                     <div class="drac-text">
-                        <p>Off: echo "colortemp 0 0 0 0 128 128 128" > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>Subtle: echo "colortemp 0 0 0 0 115 130 140" > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>Moderate: echo "colortemp 0 0 0 0 110 125 140" > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>Balanced: echo "colortemp 0 0 0 0 100 120 140" > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>Strong: echo "colortemp 0 0 0 0 90 115 140" > /proc/mi_modules/mi_disp/mi_disp0<br>
-                        <p>Intense: echo "colortemp 0 0 0 0 80 110 140" > /proc/mi_modules/mi_disp/mi_disp0<br>
+                        <p>Off: echo "colortemp 0 0 0 0 128 128 128" > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>Subtle: echo "colortemp 0 0 0 0 115 130 140" > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>Moderate: echo "colortemp 0 0 0 0 110 125 140" > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>Balanced: echo "colortemp 0 0 0 0 100 120 140" > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>Strong: echo "colortemp 0 0 0 0 90 115 140" > /proc/mi_modules/mi_disp/mi_disp0
+                        <p>Intense: echo "colortemp 0 0 0 0 80 110 140" > /proc/mi_modules/mi_disp/mi_disp0
                     </div>
                 </div>
             </div>

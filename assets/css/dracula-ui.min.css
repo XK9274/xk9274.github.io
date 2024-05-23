@@ -2617,7 +2617,7 @@ code {
   color: #f8f8f2; 
   font-family: 'Fira Code', monospace; 
   font-size: 0.75rem;
-  line-height: 0.5;
+  line-height: 1;
   padding: 0.1rem 0.25rem; 
   border-radius: var(--rounded-sm);
   white-space: pre-wrap; 

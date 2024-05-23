@@ -2562,7 +2562,7 @@ code {
   background-color: var(--cyan);
   border-radius: var(--rounded-lg);
   font-family: 'Fira Code', monospace;
-  max-width: 1400px;
+  max-width: 400px;
   overflow: hidden;
   opacity: 0.80;
 }

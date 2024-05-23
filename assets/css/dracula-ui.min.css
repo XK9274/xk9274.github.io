@@ -454,7 +454,7 @@
   --blackSecondary: #2b2b2b;
   --blackTernary: #a7abbe;
   --blackLight: rgba(33, 34, 44, 0.05);
-  --grey: #414558;
+  --grey: #3c413c;
   --greySecondary: #626784;
   --greyTernary: #b6b9c9;
   --greyLight: rgba(65, 69, 88, 0.05);
@@ -2845,7 +2845,7 @@ code {
 .drac-app-container .top-text {
   font-family: 'Fira Code', monospace;
   color: var(--blackSecondary);
-  font-size: var(--font-xl); /* Adjusted font size */
+  font-size: var(--font-xl); 
   font-weight: bold;
   text-align: center;
   flex: 1;
@@ -2855,7 +2855,7 @@ code {
 }
 
 .drac-app-container .bottom-section {
-  background-color: var(--cyan);
+  background-color: var(--grey);
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -2870,14 +2870,14 @@ code {
 }
 
 .drac-app-container .manual-card h2 {
-  font-size: var(--font-xl); /* Adjusted font size */
+  font-size: var(--font-xl); 
   font-weight: 600;
   margin: var(--spacing-sm) 0;
 }
 
 .drac-app-container .manual-card p {
   margin: var(--spacing-xs) 0;
-  font-size: var(--font-sm); /* Adjusted font size */
+  font-size: var(--font-sm); 
   color: var(--white);
 }
 
@@ -2897,7 +2897,7 @@ code {
   padding: var(--spacing-sm);
   text-align: center;
   color: var (--white);
-  font-size: var(--font-sm); /* Adjusted font size */
+  font-size: var(--font-sm); 
   font-weight: 600;
 }
 
@@ -2910,8 +2910,8 @@ code {
 .github-card .card-content img {
   border-radius: 50%;
   margin-right: var(--spacing-xs);
-  width: 32px; /* Adjusted size */
-  height: 32px; /* Adjusted size */
+  width: 32px; 
+  height: 32px; 
 }
 
 .github-card .card-details {
@@ -2920,33 +2920,33 @@ code {
 
 .github-card .card-details .repo-name {
   color: var(--green);
-  font-size: var(--font-sm); /* Adjusted font size */
+  font-size: var(--font-sm); 
   margin: 0;
 }
 
 .github-card .card-details .author-name {
   color: var(--white);
-  font-size: var(--font-xs); /* Adjusted font size */
+  font-size: var(--font-xs); 
   margin: 0;
 }
 
 .github-card .card-details .repo-description {
   color: var(--white);
-  font-size: var(--font-xs); /* Adjusted font size */
+  font-size: var(--font-xs); 
   margin-top: var(--spacing-xxs);
 }
 
 /* Streamlined GitHub card styles */
 .streamlined-card {
-  max-width: 200px; /* Adjust size as needed */
+  max-width: 200px;
 }
 
 .streamlined-card .streamlined-card-header {
-  background-color: var(--cyan);
+  background-color: var(--black);
   padding: var(--spacing-xs);
   text-align: center;
   color: var(--white);
-  font-size: var(--font-xs); /* Adjusted font size */
+  font-size: var(--font-xs);
   font-weight: 600;
 }
 
@@ -2959,8 +2959,8 @@ code {
 .streamlined-card .streamlined-card-content img {
   border-radius: 50%;
   margin-right: var(--spacing-xs);
-  width: 32px; /* Adjust size as needed */
-  height: 32px; /* Adjust size as needed */
+  width: 32px;
+  height: 32px; 
 }
 
 .streamlined-card .streamlined-card-details {
@@ -2969,13 +2969,13 @@ code {
 
 .streamlined-card .streamlined-repo-name {
   color: var(--green);
-  font-size: var(--font-xs); /* Adjusted font size */
+  font-size: var(--font-xs); 
   margin: 0;
 }
 
 .streamlined-card .streamlined-author-name {
-  color: var(--white);
-  font-size: var(--font-xxs); /* Adjusted font size */
+  color: var(--greenSecondary);
+  font-size: var(--font-xxs); 
   margin: 0;
 }
 

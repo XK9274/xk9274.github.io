@@ -2406,6 +2406,13 @@ code {
   gap: var(--spacing-lg);
 }
 
+.center-container-gh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .center-container {
   display: flex;
   flex-wrap: wrap;
@@ -2470,7 +2477,6 @@ code {
   font-weight: bold;
   margin-top: var(--spacing-xs);
 }
-
 
 .drac-summary-box-wrapper {
   position: relative;

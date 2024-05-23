@@ -2871,3 +2871,19 @@ code {
     width: auto;
     height: auto;
 }
+
+.drac-side-by-side-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between the two elements as needed */
+}
+
+.drac-code-c {
+    background-color: #1b1b1b;
+    color: #8aff80;
+    font-family: 'Fira Code', monospace;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}

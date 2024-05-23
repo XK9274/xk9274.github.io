@@ -347,24 +347,11 @@
             <ul class="mb-5 drac-list drac-list-none">
                     
     <li class="drac-box-ternary">
-        <a href="#" class="
-            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-green--hover collapsed"
-            data-bs-toggle="collapse" data-bs-target="#packages-collapse" aria-expanded="false">
-            Packages
-        </a>
-
-        <div class="collapse" id="packages-collapse">
-            <ul class="mb-5 drac-list drac-list-none">
-                    
-    <li class="drac-box-ternary">
-        <a href="../../dummy/dummy.md"
+        <a href="../../a30/packages/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-green--hover">
-            ->Dummy
+            Packages
         </a>
-    </li>
-            </ul>
-        </div>
     </li>
                     
     <li class="drac-box-ternary">
@@ -372,6 +359,14 @@
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-green--hover">
             Event Endpoints
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../a30/research/analogue/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-green--hover">
+            Analogue Logic
         </a>
     </li>
             </ul>
@@ -519,7 +514,7 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href="../../a30/research/events/"
+                    <a href="../../a30/research/analogue/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
@@ -647,13 +642,13 @@ Step 1: Enable WSL and Install WSL2
 <li>
 <p><strong>Enable WSL:</strong>
    Open PowerShell as Administrator and run:
-   <div class="highlight"><pre><span></span><code><span class="n">wsl</span> <span class="p">-</span><span class="n">-install</span>
-</code></pre></div></p>
+   <div class="language-powershell highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">wsl</span> <span class="p">-</span><span class="n">-install</span>
+</span></code></pre></div></td></tr></table></div></p>
 </li>
 <li>
 <p><strong>Set WSL2 as the Default Version:</strong>
-   <div class="highlight"><pre><span></span><code><span class="n">wsl</span> <span class="p">-</span><span class="n">-set-default-version</span> <span class="n">2</span>
-</code></pre></div></p>
+   <div class="language-powershell highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">wsl</span> <span class="p">-</span><span class="n">-set-default-version</span> <span class="n">2</span>
+</span></code></pre></div></td></tr></table></div></p>
 </li>
 <li>
 <p><strong>Restart Your Computer:</strong>
@@ -716,13 +711,13 @@ Step 5: Install Make and Git in WSL
 </li>
 <li>
 <p><strong>Update Package Lists:</strong>
-   <div class="highlight"><pre><span></span><code>sudo apt update
-</code></pre></div></p>
+   <div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a>sudo apt update
+</span></code></pre></div></td></tr></table></div></p>
 </li>
 <li>
 <p><strong>Install Git and Make:</strong>
-   <div class="highlight"><pre><span></span><code>sudo apt install git make
-</code></pre></div></p>
+   <div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo apt install git make
+</span></code></pre></div></td></tr></table></div></p>
 </li>
 </ol>
 <section class="drac-text-cyan-green drac-text-subheader">
@@ -732,21 +727,21 @@ Step 6: Clone the Repository and Build the Docker Image
 <ol>
 <li>
 <p><strong>Clone the Repository:</strong>
-   <div class="highlight"><pre><span></span><code>git clone https://github.com/shauninman/union-miyoomini-toolchain.git
-</code></pre></div></p>
+   <div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a>git clone https://github.com/shauninman/union-miyoomini-toolchain.git
+</span></code></pre></div></td></tr></table></div></p>
 </li>
 <li>
 <p><strong>Navigate to the Directory:</strong>
-   <div class="highlight"><pre><span></span><code>cd union-miyoomini-toolchain
-</code></pre></div></p>
+   <div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a>cd union-miyoomini-toolchain
+</span></code></pre></div></td></tr></table></div></p>
 </li>
 <li>
 <p><strong>Build and Run the Docker Container:</strong>
-   <div class="highlight"><pre><span></span><code>make shell
-</code></pre></div></p>
+   <div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a>make shell
+</span></code></pre></div></td></tr></table></div></p>
 </li>
 </ol>
-<div class="center-container">
+<div class="center-container-gen">
   <div class="drac-terminal-background">
     <div class="drac-terminal-panel">
       <div class="drac-title">

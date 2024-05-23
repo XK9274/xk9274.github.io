@@ -347,24 +347,11 @@
             <ul class="mb-5 drac-list drac-list-none">
                     
     <li class="drac-box-ternary">
-        <a href="#" class="
-            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-green--hover collapsed"
-            data-bs-toggle="collapse" data-bs-target="#packages-collapse" aria-expanded="false">
-            Packages
-        </a>
-
-        <div class="collapse" id="packages-collapse">
-            <ul class="mb-5 drac-list drac-list-none">
-                    
-    <li class="drac-box-ternary">
-        <a href="../../../dummy/dummy.md"
+        <a href="../../../a30/packages/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-green--hover">
-            ->Dummy
+            Packages
         </a>
-    </li>
-            </ul>
-        </div>
     </li>
                     
     <li class="drac-box-ternary">
@@ -372,6 +359,14 @@
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-green--hover">
             Event Endpoints
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../a30/research/analogue/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-green--hover">
+            Analogue Logic
         </a>
     </li>
             </ul>
@@ -656,8 +651,8 @@ Step 2: Open a terminal and cd to your WSL2 home location
 </li>
 <li>
 <p><strong>Change Directory to Home:</strong>
-   <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~
-</code></pre></div></p>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>~
+</span></code></pre></div></td></tr></table></div></p>
 </li>
 </ol>
 <section class="drac-text-cyan-green drac-text-subheader">
@@ -667,18 +662,18 @@ Step 3: Clone and start the docker environment
 <ol>
 <li>
 <p><strong>Clone the Union Miyoo Mini Toolchain Repository:</strong>
-   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/shauninman/union-miyoomini-toolchain.git
-</code></pre></div></p>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/shauninman/union-miyoomini-toolchain.git
+</span></code></pre></div></td></tr></table></div></p>
 </li>
 <li>
 <p><strong>Navigate to the Directory:</strong>
-   <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>union-miyoomini-toolchain
-</code></pre></div></p>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>union-miyoomini-toolchain
+</span></code></pre></div></td></tr></table></div></p>
 </li>
 <li>
 <p><strong>Build and Run the Docker Environment:</strong>
-   <div class="highlight"><pre><span></span><code>make<span class="w"> </span>shell
-</code></pre></div></p>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a>make<span class="w"> </span>shell
+</span></code></pre></div></td></tr></table></div></p>
 </li>
 </ol>
 <section class="drac-text-cyan-green drac-text-subheader">
@@ -688,13 +683,13 @@ Step 4: Clone the "hello-miyoo-c" project
 <ol>
 <li>
 <p><strong>Clone the Project Repository:</strong>
-   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/XK9274/hello-miyoo-c.git
-</code></pre></div></p>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/XK9274/hello-miyoo-c.git
+</span></code></pre></div></td></tr></table></div></p>
 </li>
 <li>
 <p><strong>Navigate to the Project Directory:</strong>
-   <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>hello-miyoo-c
-</code></pre></div></p>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nb">cd</span><span class="w"> </span>hello-miyoo-c
+</span></code></pre></div></td></tr></table></div></p>
 </li>
 </ol>
 <section class="drac-text-cyan-green drac-text-subheader">
@@ -703,8 +698,8 @@ Step 5: Enter and build (make) the project
 
 <ol>
 <li><strong>Build the Project:</strong>
-   <div class="highlight"><pre><span></span><code>make
-</code></pre></div></li>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a>make
+</span></code></pre></div></td></tr></table></div></li>
 </ol>
 <div class="center-container-gen">
   <div class="drac-terminal-background">
@@ -796,7 +791,7 @@ Step 5: Enter and build (make) the project
   </div>
 </div>
 
-<p>Or, through the Simple Terminal app:</p>
+<p><br>Or, through the Simple Terminal app:</p>
 <div class="content-wrapper">
     <div class="card-wrapper">
        <div class="card-images">

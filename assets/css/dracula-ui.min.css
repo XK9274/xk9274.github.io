@@ -3095,7 +3095,7 @@ code {
 }
 
 .google-drive-card .card-footer {
-    background-color: var(--blackSecondary);
+    background-color: var(--cyan);
     padding: var(--spacing-xs);
     text-align: center;
     color: var(--white);

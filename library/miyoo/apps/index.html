@@ -601,12 +601,18 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><div class="center-container-gen">
-    <!-- GitHub Cards will be added here dynamically -->
-</div>
+        <p><div class="container-new">
+    <div class="column" id="repo-column">
+        <div class="center-container-gen">
+            <!-- GitHub Cards will be added here dynamically -->
+        </div>
+    </div>
 
-<div class="center-container-gen-drive">
-    <!-- Google Drive Cards will be added here dynamically -->
+    <div class="column" id="drive-column">
+        <div class="center-container-gen-drive">
+            <!-- Google Drive Cards will be added here dynamically -->
+        </div>
+    </div>
 </div>
 
 <script src="/assets/js/ghq.js"></script>
@@ -692,7 +698,7 @@
     }
 
     function displayRepoCard(repoData, userData, title, description, type) {
-        const centerContainer = document.querySelector('.center-container-gen');
+        const centerContainer = document.querySelector('#repo-column .center-container-gen');
 
         const cardContainer = document.createElement('div');
         cardContainer.className = 'drac-app-container';
@@ -732,7 +738,7 @@
     }
 
     function displayManualCard(title, description, repoUrl, type) {
-        const centerContainer = document.querySelector('.center-container-gen');
+        const centerContainer = document.querySelector('#repo-column .center-container-gen');
 
         const cardContainer = document.createElement('div');
         cardContainer.className = 'drac-app-container';
@@ -794,16 +800,15 @@
     });
 
     function displayDriveCards(files) {
-        const centerContainer = document.querySelector('.center-container-gen-drive');
+        const centerContainer = document.querySelector('#drive-column .center-container-gen-drive');
 
         files.forEach(file => {
             const cardContainer = document.createElement('div');
             cardContainer.className = 'google-drive-card';
 
             cardContainer.innerHTML = `
-                <div class="card-header">${file.title}</div>
                 <div class="card-content">
-                    <img src="${file.imgSrc}" alt="Drive File Thumbnail">
+                    <img src="${file.imgSrc}" alt="${file.title}">
                     <div class="card-details">
                         <p class="drive-file-name">${file.title}</p>
                         <p class="drive-file-type">${file.type}</p>

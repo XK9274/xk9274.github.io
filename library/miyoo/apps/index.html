@@ -183,14 +183,6 @@
     </li>
                     
     <li class="drac-box-ternary">
-        <a href="../packages/"
-            class="
-            drac-anchor d-inline-flex align-items-center border-0 drac-text-green--hover">
-            -> Packages
-        </a>
-    </li>
-                    
-    <li class="drac-box-ternary">
         <a href="#" class="
             drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-green--hover collapsed"
             data-bs-toggle="collapse" data-bs-target="#->-compiling-collapse" aria-expanded="false">
@@ -536,7 +528,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="../packages/"
+                    <a href="../compiling/ffmpeg/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
@@ -610,7 +602,11 @@
                 <section class="p-md-5 section-content">
     <article>
         <p><div class="center-container-gen">
-    <!-- Cards will be added here dynamically -->
+    <!-- GitHub Cards will be added here dynamically -->
+</div>
+
+<div class="center-container-gen-drive">
+    <!-- Google Drive Cards will be added here dynamically -->
 </div>
 
 <script src="/assets/js/ghq.js"></script>
@@ -618,9 +614,21 @@
     document.addEventListener('DOMContentLoaded', function() {
         const repoConfigs = [
             {
-                url: 'https://api.github.com/repos/syncthing/syncthing',
+                url: 'https://api.github.com/repos/XK9274/syncthing-app-miyoo',
                 title: 'Syncthing',
                 description: 'Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes. Your data is your data alone and you deserve to choose where it is stored, whether it is shared with some third party, and how it’s transmitted over the internet.',
+                type: 'App'
+            },
+            {
+                url: 'https://api.github.com/repos/steward-fu/sdl2',
+                title: 'SDL2 (Miyoo flavour)',
+                description: 'A custom SDL2 implementation for the Miyoo Mini and Miyoo Mini Plus (Sigmastar SSD202D)',
+                type: 'App'
+            },
+            {
+                url: 'https://api.github.com/repos/XK9274/sdl2_miyoo',
+                title: 'SDL2 (Miyoo flavour)',
+                description: 'A custom SDL2 implementation for the Miyoo Mini and Miyoo Mini Plus (Sigmastar SSD202D)',
                 type: 'App'
             },
             {
@@ -746,6 +754,69 @@
         `;
 
         centerContainer.appendChild(cardContainer);
+    }
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const driveFiles = [
+            {
+                title: 'MGBA SDL2 Standalone',
+                description: 'Standalone mGBA Emulator test for MMP',
+                type: 'Game',
+                url: 'https://drive.google.com/file/d/1V-Ju8EfuPN2gsOURReHVUubAGGuljmnp/view?usp=sharing',
+                imgSrc: '/assets/images/icon/icons8-google-drive-48.png'
+            },
+            {
+                title: 'evtest',
+                description: 'evtest - a binary used for monitoring event endpoints',
+                type: 'App',
+                url: 'https://drive.google.com/file/d/1zHz70U39K2dKxtoPDKpACvPdfPebDdvf/view?usp=sharing',
+                imgSrc: '/assets/images/icon/icons8-google-drive-48.png'
+            },
+            {
+                title: 'Mono',
+                description: 'Mono package, compatible with MM/MM+',
+                type: 'App',
+                url: 'https://drive.google.com/file/d/1Rd0G12cQyfiqTDp_M5aXyrzqgJb_SxLl/view?usp=sharing',
+                imgSrc: '/assets/images/icon/icons8-google-drive-48.png'
+            },
+            {
+                title: 'ZSH',
+                description: 'ZSH w/ Regex package, compatible with MM/MM+',
+                type: 'App',
+                url: 'https://drive.google.com/file/d/1wuxg68SdRfU1oOA8hXhLsGORGqfeU93v/view?usp=sharing',
+                imgSrc: '/assets/images/icon/icons8-google-drive-48.png'
+            }
+        ];
+
+        displayDriveCards(driveFiles);
+    });
+
+    function displayDriveCards(files) {
+        const centerContainer = document.querySelector('.center-container-gen-drive');
+
+        files.forEach(file => {
+            const cardContainer = document.createElement('div');
+            cardContainer.className = 'google-drive-card';
+
+            cardContainer.innerHTML = `
+                <div class="card-header">${file.title}</div>
+                <div class="card-content">
+                    <img src="${file.imgSrc}" alt="Drive File Thumbnail">
+                    <div class="card-details">
+                        <p class="drive-file-name">${file.title}</p>
+                        <p class="drive-file-type">${file.type}</p>
+                        <p class="drive-file-description">${file.description}</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="${file.url}" target="_blank" style="color: var(--green);">Download</a>
+                </div>
+            `;
+
+            centerContainer.appendChild(cardContainer);
+        });
     }
 </script></p>
     </article>

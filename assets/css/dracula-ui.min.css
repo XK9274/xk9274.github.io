@@ -2425,36 +2425,41 @@ code {
 .card-wrapper {
   display: flex;
   flex-direction: column;
+  background-color: var(--greySecondary);
   border-radius: var(--rounded-lg);
-  overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
   margin: var(--spacing-sm);
+  width: 100%;
+  max-width: 400px;
+  padding: var(--spacing-md);
 }
 
 .card-images {
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  background-color: var(--green);
-}
-
-.card-image {
-  padding: var(--spacing-sm);
-  text-align: center;
-  flex: 1;
-  flex-basis: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-image img {
-  max-width: 50%;
-  border-radius: var(--rounded-lg);
+  width: 48px;
+  height: 48px;
+  margin-right: var(--spacing-sm);
 }
 
-.card-image p {
-  margin-top: var(--spacing-xs);
-  font-weight: bold;
+.card-text p {
+  font-size: var(--font-sm);
   color: var(--white);
+  margin: var(--spacing-xs) 0;
+}
+
+.card-text a {
+  font-size: var(--font-sm);
+  color: var(--green);
+  text-decoration: none;
+}
+
+.card-text a:hover {
+  text-decoration: underline;
 }
 
 .card-text {
@@ -2818,6 +2823,24 @@ code {
   align-items: center;
 }
 
+.center-container-gen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-container-gen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-container-gen-drive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .drac-app-container {
   display: flex;
   flex-direction: column;
@@ -2967,7 +2990,6 @@ code {
   width: 100%;
 }
 
-
 /* Existing GitHub card styles */
 .github-card {
   background-color: var(--black);
@@ -3021,4 +3043,69 @@ code {
   color: var(--white);
   font-size: var(--font-xs); 
   margin-top: var(--spacing-xxs);
+}
+
+/* CSS for Google Drive Cards */
+.google-drive-card {
+    background-color: var(--black);
+    border-radius: var(--rounded-lg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Updated width to match drac-app-container */
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--spacing-sm);
+}
+
+.google-drive-card .card-header {
+    background-color: var(--cyan);
+    padding: var(--spacing-sm);
+    text-align: center;
+    color: var(--white);
+    font-size: var(--font-md);
+    font-weight: 600;
+}
+
+.google-drive-card .card-content {
+    padding: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+}
+
+.google-drive-card .card-content img {
+    border-radius: var(--rounded-lg);
+    margin-right: var(--spacing-xs);
+    width: 48px;
+    height: 48px;
+}
+
+.google-drive-card .card-details {
+    flex: 1;
+}
+
+.google-drive-card .card-details .drive-file-name {
+    color: var(--green);
+    font-size: var(--font-md);
+    margin: 0;
+}
+
+.google-drive-card .card-details .drive-file-type {
+    color: var(--white);
+    font-size: var(--font-sm);
+    margin: 0;
+}
+
+.google-drive-card .card-details .drive-file-description {
+    color: var(--white);
+    font-size: var(--font-sm);
+    margin-top: var(--spacing-xxs);
+}
+
+.google-drive-card .card-footer {
+    background-color: var(--blackSecondary);
+    padding: var(--spacing-xs);
+    text-align: center;
+    color: var(--white);
+    font-size: var(--font-sm);
 }

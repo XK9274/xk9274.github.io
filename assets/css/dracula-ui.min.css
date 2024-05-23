@@ -2845,7 +2845,7 @@ code {
 .drac-app-container .top-text {
   font-family: 'Fira Code', monospace;
   color: var(--blackSecondary);
-  font-size: var(--font-2xl);
+  font-size: var(--font-xl); /* Adjusted font size */
   font-weight: bold;
   text-align: center;
   flex: 1;
@@ -2870,14 +2870,14 @@ code {
 }
 
 .drac-app-container .manual-card h2 {
-  font-size: var(--font-2xl);
+  font-size: var(--font-xl); /* Adjusted font size */
   font-weight: 600;
   margin: var(--spacing-sm) 0;
 }
 
 .drac-app-container .manual-card p {
   margin: var(--spacing-xs) 0;
-  font-size: var(--font-md);
+  font-size: var(--font-sm); /* Adjusted font size */
   color: var(--white);
 }
 
@@ -2896,8 +2896,8 @@ code {
   background-color: var(--cyan);
   padding: var(--spacing-sm);
   text-align: center;
-  color: var(--white);
-  font-size: var(--font-md);
+  color: var (--white);
+  font-size: var(--font-sm); /* Adjusted font size */
   font-weight: 600;
 }
 
@@ -2910,8 +2910,8 @@ code {
 .github-card .card-content img {
   border-radius: 50%;
   margin-right: var(--spacing-xs);
-  width: 48px;
-  height: 48px;
+  width: 32px; /* Adjusted size */
+  height: 32px; /* Adjusted size */
 }
 
 .github-card .card-details {
@@ -2920,19 +2920,19 @@ code {
 
 .github-card .card-details .repo-name {
   color: var(--green);
-  font-size: var(--font-md);
+  font-size: var(--font-sm); /* Adjusted font size */
   margin: 0;
 }
 
 .github-card .card-details .author-name {
   color: var(--white);
-  font-size: var(--font-sm);
+  font-size: var(--font-xs); /* Adjusted font size */
   margin: 0;
 }
 
 .github-card .card-details .repo-description {
   color: var(--white);
-  font-size: var(--font-sm);
+  font-size: var(--font-xs); /* Adjusted font size */
   margin-top: var(--spacing-xxs);
 }
 
@@ -2946,7 +2946,7 @@ code {
   padding: var(--spacing-xs);
   text-align: center;
   color: var(--white);
-  font-size: var(--font-sm);
+  font-size: var(--font-xs); /* Adjusted font size */
   font-weight: 600;
 }
 
@@ -2969,13 +2969,13 @@ code {
 
 .streamlined-card .streamlined-repo-name {
   color: var(--green);
-  font-size: var(--font-sm);
+  font-size: var(--font-xs); /* Adjusted font size */
   margin: 0;
 }
 
 .streamlined-card .streamlined-author-name {
   color: var(--white);
-  font-size: var(--font-xs);
+  font-size: var(--font-xxs); /* Adjusted font size */
   margin: 0;
 }
 

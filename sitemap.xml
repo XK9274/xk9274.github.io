@@ -31,12 +31,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://xk9274.github.io/library/miyoo/compiling/python39/</loc>
+         <lastmod>2024-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://xk9274.github.io/library/miyoo/compiling/scummvm/</loc>
          <lastmod>2024-05-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://xk9274.github.io/library/miyoo/compiling/sdl2/</loc>
+         <lastmod>2024-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xk9274.github.io/library/miyoo/compiling/terminfo/</loc>
          <lastmod>2024-05-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -62,6 +72,11 @@
     </url>
     <url>
          <loc>https://xk9274.github.io/library/miyoo/mi_x/mi_sys/</loc>
+         <lastmod>2024-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xk9274.github.io/library/tsp/bluetooth/</loc>
          <lastmod>2024-05-23</lastmod>
          <changefreq>daily</changefreq>
     </url>

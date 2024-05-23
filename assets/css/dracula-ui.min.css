@@ -2714,7 +2714,7 @@ code {
 }
 
 .drac-google-drive-card {
-  background-color: var(--black);
+  background-color: var(--green);
   border-radius: var(--rounded-lg);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 600px;
@@ -2769,7 +2769,7 @@ code {
 }
 
 .drac-google-drive-card .drac-card-footer {
-  background-color: var(--blackSecondary);
+  background-color: var(--cyan);
   padding: var(--spacing-xs);
   text-align: center;
   color: var(--white);

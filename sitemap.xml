@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://xk9274.github.io/library/a30/research/events/</loc>
+         <lastmod>2024-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://xk9274.github.io/library/misc/chainner/</loc>
          <lastmod>2024-05-23</lastmod>
          <changefreq>daily</changefreq>
@@ -76,6 +81,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://xk9274.github.io/library/miyoo/packages/evtest/</loc>
+         <lastmod>2024-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://xk9274.github.io/library/miyoo/packages/mgba/</loc>
          <lastmod>2024-05-23</lastmod>
          <changefreq>daily</changefreq>
@@ -92,6 +102,16 @@
     </url>
     <url>
          <loc>https://xk9274.github.io/library/tsp/bluetooth/</loc>
+         <lastmod>2024-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xk9274.github.io/library/tsp/packages/bb/</loc>
+         <lastmod>2024-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xk9274.github.io/library/tsp/packages/dropbear/</loc>
          <lastmod>2024-05-23</lastmod>
          <changefreq>daily</changefreq>
     </url>

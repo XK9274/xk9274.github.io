@@ -1950,7 +1950,7 @@ code {
 }
 .drac-list-unordered li:before {
   content: "—";
-  padding-right: 10px;
+  padding-right: 5px;
 }
 .drac-list-ordered {
   counter-reset: li;
@@ -1972,7 +1972,7 @@ code {
 }
 .drac-list-ordered li {
   counter-increment: li;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 .drac-list-ordered li:before {
   color: var(--accentColor);
@@ -1981,7 +1981,7 @@ code {
   margin-left: 15px;
   padding-right: 5px;
   text-align: right;
-  width: 20px;
+  width: 15px;
 }
 .drac-list-black.drac-list-ordered li:before,
 .drac-list-black.drac-list-unordered li:before {

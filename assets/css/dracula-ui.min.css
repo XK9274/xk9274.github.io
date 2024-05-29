@@ -2562,7 +2562,7 @@ code {
   background-color: var(--cyan);
   border-radius: var(--rounded-lg);
   font-family: 'Fira Code', monospace;
-  max-width: 400px;
+  max-width: 450px;
   overflow: hidden;
   opacity: 0.80;
 }
@@ -2571,7 +2571,7 @@ code {
   background-color: var(--green);
   padding: var(--spacing-xs);
   color: var(--black);
-  font-size: var(--font-md);
+  font-size: var(--font-sm);
   font-weight: 600;
   text-align: center;
   opacity: 0.80;
@@ -2887,6 +2887,18 @@ code {
   align-items: center;
 }
 
+.drac-app-container .top-text-white {
+  font-family: 'Fira Code', monospace;
+  color: var(--white);
+  font-size: var(--font-xl);
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .drac-app-container .bottom-section {
   background-color: var(--greySecondary);
   flex: 1;
@@ -2996,8 +3008,8 @@ code {
 .github-card .card-header {
   background-color: var(--cyan);
   padding: var(--spacing-sm);
-  text-align: center;
-  color: var (--white);
+  text-align: right;
+  color: var(--white);
   font-size: var(--font-sm); 
   font-weight: 600;
 }
@@ -3042,7 +3054,7 @@ code {
     background-color: var(--black);
     border-radius: var(--rounded-lg);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px; /* Updated width to match drac-app-container */
+    max-width: 400px; 
     width: 100%;
     overflow: hidden;
     display: flex;

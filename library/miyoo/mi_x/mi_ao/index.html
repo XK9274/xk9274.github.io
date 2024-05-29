@@ -550,12 +550,13 @@
         </div>
     </div>
 </a>
-<br>
-    <div class="center-container-gen">
-        <div class="github-card" id="github-card">
-            <!-- Content will be injected here by JavaScript -->
+<br></p>
+<div class="center-container-gen">
+    <div class="github-card" id="github-card">
+        <!-- Content will be injected here by JavaScript -->
     </div>
-</div></p>
+</div>
+
 <section class="drac-text-cyan-green drac-text-subheader">
     Overview of MI_AO:
 </section>
@@ -589,7 +590,6 @@
 <div class="center-container-gen">
     <div class="drac-terminal-background">
         <div class="drac-terminal-panel">
-            <!-- Terminal title and icon -->
             <div class="drac-title">
                 <div class="drac-icon">
                     <img src="/assets/images/icon/icons8-terminal-48.png" alt="Terminal Icon">
@@ -622,103 +622,92 @@
             </div>
             <div class="drac-content">
                 <div class="drac-text">
-                    <p>/proc/mi_modules/mi_panel # cat ../mi_disp/mi_disp0
+                    <p>/proc/mi_modules/mi_ao # cat ./mi_ao0
 
-                    <p>-----------------------------------------Common info for mi_disp-----------------------------------------
+                    <p>-----------------------------------------Common info for mi_ao-----------------------------------------
                     <p>  ChnNum  EnChnNum  PassNum  InPortNum  OutPortNum  CollectSize
-                    <p>      17         1        1          1           0            0
+                    <p>       0         0        1          0           0            0
 
                     <p>----------------------CMDQ kickoff counter-----------------------
 
-                    <p>------------------------------Common info formi_disp only dump enabled chn------------------------------
+                    <p>------------------------------Common info formi_ao only dump enabled chn------------------------------
                     <p>  ChnId PassNum  EnInPNum  EnOutPNum  MMAHeapName
-                    <p>      0       0       1          0       (null)
 
-                    <p>-------------------------Input port common info for mi_disp  only dump enabled port---------------------
-                    <p>  ChnId  PassId  PortId  user_buf_quota  UsrInjectQ_cnt  BindInQ_cnt     TotalPendingBuf_size  usrLockedInjectCnt
-                    <p>      0       0       0               4               0            0                        0                   0
-                    <p>  ChnId  PassId  PortId  newPulseQ_cnt  nextTodoPulseQ_cnt     curWorkingQ_cnt     workingTask_cnt      lazzyRewindTask_cnt
-                    <p>      0       0       0              0                   0                   0                   0                        0
+                    <p>-------------------------Input port common info for mi_ao  only dump enabled port---------------------
+                      <p>ChnId  PassId  PortId  user_buf_quota  UsrInjectQ_cnt  BindInQ_cnt     TotalPendingBuf_size  usrLockedInjectCnt
+                      <p>ChnId  PassId  PortId  newPulseQ_cnt  nextTodoPulseQ_cnt     curWorkingQ_cnt     workingTask_cnt      lazzyRewindTask_cnt
 
-                    <p>  ChnId  PassId  PortId  Enable  bind_module_id  bind_module_name  bind_ChnId  bind_PortId bind_Type   bind_Param  enable
+                      <p>ChnId  PassId  PortId  Enable  bind_module_id  bind_module_name  bind_ChnId  bind_PortId bind_Type   bind_Param  enable
 
-                    <p>  ChnId  PassId  PortId   LowLatencyDelayMs     LastStaticDelayAveMS
+                      <p>ChnId  PassId  PortId   LowLatencyDelayMs     LastStaticDelayAveMS
 
-                    <p>  ChnId  PassId  PortId  SrcFrmrate  DstFrmrate RealSrcFrmrate    FPS   FinishCnt   RewindCnt
-                    <p>      0       0       0        0/ 0        0/ 0         0/   0   0.00           0           0
+                      <p>ChnId  PassId  PortId  SrcFrmrate  DstFrmrate RealSrcFrmrate    FPS   FinishCnt   RewindCnt
 
-                    <p>----------------------Output port common info for mi_disp  only for enabled port---------------------
-                    <p>  ChnId  PassId  PortId usrDepth  BufCntQuota  usrLockedCnt  totalOutPortInUsed   DrvBkRefFifoQ_cnt  DrvBkRefFifoQ_size
-                    <p>  ChnId  PassId  PortId RealDstFrmrate    FPS  UsrGetFifoQ_cnt UsrGetFifoQ_size  UsrGetFifoQ_seqnum  UsrGetFifoQ_discardnum
-                    <p>  ChnId  PassId  PortId  workingTask_cnt finishedTask_cnt
-                    <p>  ChnId  PassId  PortId RealDstFrmrate    FPS   FinishCnt   RewindCnt    GetTotalCnt    GetOkCnt
+                    <p>----------------------Output port common info for mi_ao  only for enabled port---------------------
+                      <p>ChnId  PassId  PortId usrDepth  BufCntQuota  usrLockedCnt  totalOutPortInUsed   DrvBkRefFifoQ_cnt  DrvBkRefFifoQ_size
+                      <p>ChnId  PassId  PortId RealDstFrmrate    FPS  UsrGetFifoQ_cnt UsrGetFifoQ_size  UsrGetFifoQ_seqnum  UsrGetFifoQ_discardnum
+                      <p>ChnId  PassId  PortId  workingTask_cnt finishedTask_cnt
+                      <p>ChnId  PassId  PortId RealDstFrmrate    FPS   FinishCnt   RewindCnt    GetTotalCnt    GetOkCnt
 
                     <p>----------------------------------------BindPeerInputPortList---------------------------------------
-                    <p>  ChnId  PassId  PortId  Enable  bind_module_id  bind_module_name  bind_ChnId  bind_PortId bind_Type   bind_Param  enable
-                    <p>============================== Private DISP0 Info ============================
-                    <p> DevStatus         IrqNum         IrqCnt        BgColor
-                    <p>         1             57          27436         800080
-                    <p> Interface      DevTiming      CscMatrix           Luma       Contrast            Hue     Saturation      Sharpness
-                    <p>       LCD        UNKNOWN              3             42             50             50             50              0
-                    <p>--------------------------------- Layer Info ---------------------------------
-                    <p>   LayerId    BindedDevID     LayerWidth    LayerHeight
-                    <p>         0              0              0              0
-                    <p>   LayerId   LayDispWidth  LayDispHeight     Toleration     rotatemode
-                    <p>         0              0              0              0           NONE
-                    <p>--------------------------------- Layer0 InputPort Info ---------------------------------
-                    <p>    PortId    enable CurStatus     src_w     src_h    crop_x    crop_y    crop_w    crop_h    show_x    show_y    show_w    show_h
-                    <p>         0         1         0       640       480         0         0         0         0         0         0       640       480
-                    <p>         1         0         0         0         0         0         0         0         0         0         0         0         0
-                    <p>         2         0         0         0         0         0         0         0         0         0         0         0         0
-                    <p>         3         0         0         0         0         0         0         0         0         0         0         0         0
-                    <p>         4         0         0         0         0         0         0         0         0         0         0         0         0
-                    <p>         5         0         0         0         0         0         0         0         0         0         0         0         0
-                    <p>         6         0         0         0         0         0         0         0         0         0         0         0         0
-                    <p>         7         0         0         0         0         0         0         0         0         0         0         0         0
-                    <p>         8         0         0         0         0         0         0         0         0         0         0         0         0
-                    <p>         9         0         0         0         0         0         0         0         0         0         0         0         0
-                    <p>        10         0         0         0         0         0         0         0         0         0         0         0         0
-                    <p>        11         0         0         0         0         0         0         0         0         0         0         0         0
-                    <p>        12         0         0         0         0         0         0         0         0         0         0         0         0
-                    <p>        13         0         0         0         0         0         0         0         0         0         0         0         0
-                    <p>        14         0         0         0         0         0         0         0         0         0         0         0         0
-                    <p>        15         0         0         0         0         0         0         0         0         0         0         0         0
-                    <p>    PortId     RecvBufCnt      RecvBuf_W      RecvBuf_H      Content_W      Content_H  RecvBufStride         PixFmt       syncmode
-                    <p>         0              0              0              0              0              0              0    yuv422_yuyv        FreeRun
-                    <p>         1              0              0              0              0              0              0    yuv422_yuyv        Invalid
-                    <p>         2              0              0              0              0              0              0    yuv422_yuyv        Invalid
-                    <p>         3              0              0              0              0              0              0    yuv422_yuyv        Invalid
-                    <p>         4              0              0              0              0              0              0    yuv422_yuyv        Invalid
-                    <p>         5              0              0              0              0              0              0    yuv422_yuyv        Invalid
-                    <p>         6              0              0              0              0              0              0    yuv422_yuyv        Invalid
-                    <p>         7              0              0              0              0              0              0    yuv422_yuyv        Invalid
-                    <p>         8              0              0              0              0              0              0    yuv422_yuyv        Invalid
-                    <p>         9              0              0              0              0              0              0    yuv422_yuyv        Invalid
-                    <p>        10              0              0              0              0              0              0    yuv422_yuyv        Invalid
-                    <p>        11              0              0              0              0              0              0    yuv422_yuyv        Invalid
-                    <p>        12              0              0              0              0              0              0    yuv422_yuyv        Invalid
-                    <p>        13              0              0              0              0              0              0    yuv422_yuyv        Invalid
-                    <p>        14              0              0              0              0              0              0    yuv422_yuyv        Invalid
-                    <p>        15              0              0              0              0              0              0    yuv422_yuyv        Invalid
-                    <p>    PortId   OnScreenTask      FiredTask     PendingTak   LastDropTask    DropTaskCnt    StepTaskCnt  bClearAllTask            fps
-                    <p>         0         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>         1         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>         2         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>         3         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>         4         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>         5         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>         6         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>         7         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>         8         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>         9         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>        10         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>        11         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>        12         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>        13         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>        14         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>        15         (null)         (null)         (null)         (null)              0              0              0              0
-                    <p>/proc/mi_modules/mi_panel #
-                    <p>
+                      <p>ChnId  PassId  PortId  Enable  bind_module_id  bind_module_name  bind_ChnId  bind_PortId bind_Type   bind_Param  enable
+
+                    <p>======================================Private AO0 Info ======================================
+                    <p>-----Start AO Dev0 Attr------------------------------------------------------------------------
+                    <p>AoDev         SampR  BitWidth  SondMod  PtNumPerFrm  bMute  VolumeDb     bStartPcmOut  ChnCnt
+                    <p>LineOut       48000  16bit     stereo   768          0      (-10 ,-10 )  1                  2
+                    <p>I2sMode  I2sMclk    I2sFmt  bI2sSync
+                    <p>i2s-mas  disable  I2S-MSB   0
+                    <p>-----End AO Dev0 Attr--------------------------------------------------------------------------
+
+                    <p>-----Start AO CHN0 STATUS----------------------------------------------------------------------
+                    <p>AoDev         AoChn  bReSmp  InSampR  OutSampR
+                    <p>LineOut       0      0       0        48000
+                    <p>AoDev         AoChn  TotalFrmCnt    TotalSize      RunTime
+                    <p>LineOut       0      4266           4359680        1717016419
+                    <p>-----Start AO CHN0 Usr Queue STATUS------------------------------------------------------------
+                    <p>AoDev         AoChn  MaxSize  RemainSize  TotalSize      RunTime
+                    <p>LineOut       0      51200    0           4359680        1717016419
+                    <p>-----AO CHN0 Vqe STATUS------------------------------------------------------------------------
+                    <p>AoDev         AoChn  bVqe  WorkRate  PoiNum
+                    <p>LineOut       0      0     0         0
+                    <p>-----AO CHN0 Anr STATUS------------------------------------------------------------------------
+                    <p>AoDev         AoChn  bAnr  AlgorithmMode  Speed       Intensity  SmoothLevel
+                    <p>LineOut       0      0     0              speed-low   0          0
+                    <p>-----AO CHN0 Eq TATUS--------------------------------------------------------------------------
+                    <p>AoDev         AoChn  bEq  AlgorithmMode
+                    <p>LineOut       0      0    0
+                    <p>EqGainDb:
+                    <p>0      0      0      0      0      0      0      0      0      0
+                    <p>0      0      0      0      0      0      0      0      0      0
+                    <p>0      0      0      0      0      0      0      0      0      0
+                    <p>0      0      0      0      0      0      0      0      0      0
+                    <p>0      0      0      0      0      0      0      0      0      0
+                    <p>0      0      0      0      0      0      0      0      0      0
+                    <p>0      0      0      0      0      0      0      0      0      0
+                    <p>0      0      0      0      0      0      0      0      0      0
+                    <p>0      0      0      0      0      0      0      0      0      0
+                    <p>0      0      0      0      0      0      0      0      0      0
+                    <p>0      0      0      0      0      0      0      0      0      0
+                    <p>0      0      0      0      0      0      0      0      0      0
+                    <p>0      0      0      0      0      0      0      0      0
+                    <p>-----AO CHN0 Hpf STATUS------------------------------------------------------------------------
+                    <p>AoDev         AoChn  bHpf  AlgorithmMode  HpfFreq
+                    <p>LineOut       0      0     0              0
+                    <p>-----AO CHN0 Agc STATUS------------------------------------------------------------------------
+                    <p>AoDev         AoChn  bAgc  AlgorithmMode  AttackTime  ReleaseTime  DropGainMax
+                    <p>LineOut       0      0     0              0           0            0
+                    <p>Input Compression ratio:
+                    <p>0      0      0      0      0
+                    <p>Output Compression ratio:
+                    <p>0      0      0      0      0
+                    <p>GainInit  GainMin  GainMax  NoiseGateAttenuationDb  NoiseGateDb  TargetLevelDb
+                    <p>0         0        0        0                       0            0
+                    <p>-----AO CHN0 Adec STATUS-----------------------------------------------------------------------
+                    <p>AoDev         AoChn  bAdec     Type    SondMod    SampR
+                    <p>LineOut       0      0        g711a    mono       0
+                    <p>-----End AO Chn0 STATUS------------------------------------------------------------------------
+                    <p>/proc/mi_modules/mi_ao #
                 </div>
             </div>
         </div>
@@ -732,7 +721,6 @@
 <div class="center-container-gen">
     <div class="drac-terminal-background">
         <div class="drac-terminal-panel">
-
             <div class="drac-title">
                 <div class="drac-icon">
                     <img src="/assets/images/icon/icons8-terminal-48.png" alt="Terminal Icon">
@@ -756,10 +744,18 @@
 
 <script src="/assets/js/ghq.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const repoUrl = 'https://api.github.com/repos/XK9274/ssd20x-SDK-en-mirror';
-        fetchGitHubRepo(repoUrl);
-    });
+document.addEventListener('DOMContentLoaded', function() {
+    const repoConfigs = [
+        {
+            url: 'https://api.github.com/repos/XK9274/ssd20x-SDK-en-mirror',
+            title: 'SSD20X SDK Mirror',
+            description: 'Official SSD20X SDK Mirror',
+            type: 'SDK'
+        }
+    ];
+
+    checkRateLimit(repoConfigs);
+});
 </script></p>
     </article>
 </section>

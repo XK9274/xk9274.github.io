@@ -67,37 +67,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar Example</title>
-    <style>
-        .sidebar .drac-text,
-        .sidebar .drac-anchor {
-            font-size: var(--font-sm); /* Change this to the desired font size */
-        }
-
-        .sidebar .drac-anchor-secondary {
-            font-size: var(--font-sm); /* Change this to the desired font size */
-        }
-
-        .sidebar .drac-list li {
-            font-size: var(--font-sm); /* Change this to the desired font size */
-        }
-
-        .sidebar .drac-nav-container .drac-nav-link img {
-            max-width: 24px;
-            max-height: 24px;
-            width: auto;
-            height: auto;
-        }
-
-        .drac-text-center {
-            margin-top: var(--spacing-xs); /* Adjust this value as needed */
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <nav id="sidebar" class="sidebar drac-bg-black">
         <div class="custom-menu">
             <button type="button" id="sidebarCollapse" class="btn btn-primary">
-                <i class="fa fa-bars"></i>
+                <i class="fa fa-long-arrow-left"></i>
                 <span class="sr-only">Menu</span>
             </button>
         </div>
@@ -437,6 +413,25 @@
             <!-- endblock -->
         </div>
     </nav>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidebar = document.getElementById('sidebar');
+            const sidebarCollapseBtn = document.getElementById('sidebarCollapse');
+            const sidebarIcon = sidebarCollapseBtn.querySelector('.fa');
+
+            sidebarCollapseBtn.addEventListener('click', function() {
+                sidebar.classList.toggle('collapsed');
+                if (sidebar.classList.contains('collapsed')) {
+                    sidebarIcon.classList.remove('fa-long-arrow-left');
+                    sidebarIcon.classList.add('fa-long-arrow-right');
+                } else {
+                    sidebarIcon.classList.remove('fa-long-arrow-right');
+                    sidebarIcon.classList.add('fa-long-arrow-left');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
         <!-- endblock -->

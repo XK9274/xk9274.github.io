@@ -49,6 +49,7 @@
         <link rel="stylesheet" href="../../../assets/css/dracula-ui.min.css">
         <link rel="stylesheet" href="../../../assets/css/mkdocs.min.css">
             <link href="../../../assets/css/link-embeds.css" rel="stylesheet">
+            <link href="../../../assets/css/font-awesome.min.css" rel="stylesheet">
 
         
             <link  rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
@@ -63,12 +64,6 @@
         <!-- block sidebar -->
             <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar Example</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
 <body>
     <nav id="sidebar" class="sidebar drac-bg-black">
         <div class="custom-menu">
@@ -109,6 +104,12 @@
                 <li class="drac-nav-item">
                     <a class="drac-nav-link" href="https://discordapp.com/users/172026334254465024" target="_blank">
                         <img src="/assets/images/icon/icon_clyde_blurple_RGB.png" alt="Discord">
+                    </a>
+                </li>
+                
+                <li class="drac-nav-item">
+                    <a class="drac-nav-link" href="https://www.reddit.com/user/XK9274/" target="_blank">
+                        <i class="fa fa-reddit-square"></i>
                     </a>
                 </li>
             </ul>
@@ -531,17 +532,19 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><div class="language-text highlight"><pre><span></span><code>    &lt;p&gt;&lt;section class=&quot;drac-text-cyan-green drac-text-header&quot;&gt;
-</code></pre></div>
-<p>Setting up WSL2, Docker, and running your first container.
-</section></p>
+        <p><section class="drac-text-cyan-green drac-text-header">
+  Setting up WSL2, Docker, and running your first container.
+</section>
+
 <section class="drac-text-cyan-green drac-text-subheader">
 WSL (Windows Subsystem for Linux)<br>
 </section>
-<p>WSL, or Windows Subsystem for Linux, is a handy feature for Windows users who want to run Linux without all the hassle. It lets you open up a Linux terminal right on your Windows machine, so you can use Linux commands and tools without needing a separate Linux computer or a virtual machine. It's perfect for developers and anyone who likes the flexibility of Linux but prefers sticking with Windows for their day-to-day stuff.</p>
+
+<p>WSL, or Windows Subsystem for Linux, is a handy feature for Windows users who want to run Linux without all the hassle. It lets you open up a Linux terminal right on your Windows machine, so you can use Linux commands and tools without needing a separate Linux computer or a virtual machine. It's perfect for developers and anyone who likes the flexibility of Linux but prefers sticking with Windows for their day-to-day stuff.</p></p>
 <section class="drac-text-cyan-green drac-text-subheader">
 Docker<br>
 </section>
+
 <p>Docker is like having a magic box for your apps. You put your application and everything it needs to run (like code, libraries, and settings) into this box, called a container. Then, you can run this container on any machine with Docker installed, and it will work exactly the same. It's super useful because it means your app can run anywhere, from your laptop to a big server in the cloud, without any weird issues popping up. Plus, it makes sharing your app with others a breeze.. We use Docker for compiling as the container can be started/stopped at will and also resets the rootfs every boot.</p>
 <div class="content-wrapper">
   <div class="card-wrapper">
@@ -560,14 +563,16 @@ Docker<br>
 
   <div class="drac-summary-box-wrapper">
     <div class="drac-summary-box">
-      <h2>What we'll be doing:</h2>
-      <ol>
-        <li>Enable WSL and set WSL2 as default.</li>
-        <li>Install a Linux distribution from Microsoft Store.</li>
-        <li>Install Docker Desktop and enable WSL2 integration.</li>
-        <li>Install Git and Make in your WSL terminal.</li>
-        <li>Clone a repository and build the Docker image.</li>
-      </ol>
+        <section class="drac-text-cyan-green drac-text-subheader"> 
+            What we'll be doing: 
+        </section>
+        <ol>
+            <li>Enable WSL and set WSL2 as default.</li>
+            <li>Install a Linux distribution from Microsoft Store.</li>
+            <li>Install Docker Desktop and enable WSL2 integration.</li>
+            <li>Install Git and Make in your WSL terminal.</li>
+            <li>Clone a repository and build the Docker image.</li>
+        </ol> 
     </div>
   </div>
 </div>
@@ -576,109 +581,84 @@ Docker<br>
 Step 1: Enable WSL and Install WSL2
 </section>
 
-<ol>
-<li>
 <p><strong>Enable WSL:</strong>
    Open PowerShell as Administrator and run:
    <div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><span class="n">wsl</span> <span class="p">-</span><span class="n">-install</span>
 </span></code></pre></div></p>
-</li>
-<li>
+
 <p><strong>Set WSL2 as the Default Version:</strong>
    <div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><span class="n">wsl</span> <span class="p">-</span><span class="n">-set-default-version</span> <span class="n">2</span>
 </span></code></pre></div></p>
-</li>
-<li>
+
 <p><strong>Restart Your Computer:</strong>
    Restart your computer to apply changes.</p>
-</li>
-</ol>
+
 <section class="drac-text-cyan-green drac-text-subheader">
 Step 2: Install a Linux Distribution
 </section>
 
-<ol>
-<li>
 <p><strong>Install a Linux Distribution:</strong>
    Open Microsoft Store, search for your preferred Linux distribution (e.g., Ubuntu), and install it.</p>
-</li>
-<li>
+
 <p><strong>Set Up Your Linux Distribution:</strong>
    Launch the installed distribution from the Start menu and complete the initial setup (create a user account and set a password).</p>
-</li>
-</ol>
+
 <section class="drac-text-cyan-green drac-text-subheader">
 Step 3: Install Docker Desktop
 </section>
 
-<ol>
-<li>
 <p><strong>Download Docker Desktop:</strong>
    <a href="https://www.docker.com/products/docker-desktop" class="drac-text-green">Docker's official website</a></p>
-</li>
-<li>
+
 <p><strong>Enable WSL2 Integration:</strong>
    During the installation, ensure the option "Use the WSL 2 based engine" is checked.</p>
-</li>
-<li>
+
 <p><strong>Finish Installation:</strong>
    Complete the installation and start Docker Desktop.</p>
-</li>
-</ol>
+
 <section class="drac-text-cyan-green drac-text-subheader">
 Step 4: Configure Docker to Use WSL2
 </section>
-<ol>
-<li>
+
 <p><strong>Open Docker Desktop:</strong>
    Go to Settings.</p>
-</li>
-<li>
+
 <p><strong>Enable WSL2 Integration:</strong></p>
-</li>
-<li>Navigate to <code>Resources</code> -&gt; <code>WSL Integration</code>.</li>
-<li>Ensure that the Linux distribution you installed is checked to enable integration.</li>
-</ol>
+
+<p>Navigate to <code>Resources</code> -&gt; <code>WSL Integration</code>.
+Ensure that the Linux distribution you installed is checked to enable integration.</p>
 <section class="drac-text-cyan-green drac-text-subheader">
 Step 5: Install Make and Git in WSL
 </section>
-<ol>
-<li>
+
 <p><strong>Open WSL Terminal:</strong>
    Open your installed Linux distribution from the Start menu.</p>
-</li>
-<li>
+
 <p><strong>Update Package Lists:</strong>
    <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1">sudo apt update
 </span></code></pre></div></p>
-</li>
-<li>
+
 <p><strong>Install Git and Make:</strong>
    <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1">sudo apt install git make
 </span></code></pre></div></p>
-</li>
-</ol>
+
 <section class="drac-text-cyan-green drac-text-subheader">
 Step 6: Clone the Repository and Build the Docker Image
 </section>
 <p>The Union toolchain is a pre-built toolchain by Shauninman. It contains everything you need to compile for the Miyoo Mini(&amp;Plus)<br><br></p>
-<ol>
-<li>
+
 <p><strong>Clone the Repository:</strong>
    <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1">git clone https://github.com/shauninman/union-miyoomini-toolchain.git
 </span></code></pre></div></p>
-</li>
-<li>
+
 <p><strong>Navigate to the Directory:</strong>
    <div class="language-text highlight"><pre><span></span><code><span id="__span-5-1">cd union-miyoomini-toolchain
 </span></code></pre></div></p>
-</li>
-<li>
+
 <p><strong>Build and Run the Docker Container:</strong>
    <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1">make shell
 </span></code></pre></div></p>
-</li>
-</ol>
+
 <div class="center-container-gen">
   <div class="drac-terminal-background">
     <div class="drac-terminal-panel">
@@ -698,9 +678,11 @@ Step 6: Clone the Repository and Build the Docker Image
   </div>
 </div>
 
-<p>You're now in a containerised shell and can begin compiling; why not try this script out to compile your first Miyoo compatible binary? 
+<p>You're now in a containerised shell and can begin compiling; why not try this script out to compile your first Miyoo compatible binary? </br>
+
 <a href="/library/miyoo/compiling/hello-miyoo/" class="drac-text-green">The Hello-Miyoo test app</a></p>
-</p></p>
+</p>
+<p><section class="drac-text-cyan-green drac-text-header"></p>
     </article>
 </section>
             <!-- endblock -->

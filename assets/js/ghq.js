@@ -1,3 +1,19 @@
+async function checkRateLimit(repoConfigs) {
+    try {
+        const response = await fetch('https://api.github.com/rate_limit');
+        const data = await response.json();
+
+        if (data.resources.core.remaining > 0) {
+            repoConfigs.forEach(config => fetchGitHubRepo(config.url, config.title, config.description, config.type));
+        } else {
+            repoConfigs.forEach(config => displayManualCard(config.title, config.description, config.url, config.type));
+        }
+    } catch (error) {
+        console.error('Error checking rate limit:', error);
+        repoConfigs.forEach(config => displayManualCard(config.title, config.description, config.url, config.type));
+    }
+}
+
 function getCachedData(key) {
     const cachedData = localStorage.getItem(key);
     if (cachedData) {
@@ -125,18 +141,4 @@ function displayManualCard(title, description, repoUrl, type) {
     centerContainer.appendChild(cardContainer);
 }
 
-async function checkRateLimit(repoConfigs) {
-    try {
-        const response = await fetch('https://api.github.com/rate_limit');
-        const data = await response.json();
 
-        if (data.resources.core.remaining > 0) {
-            repoConfigs.forEach(config => fetchGitHubRepo(config.url, config.title, config.description, config.type));
-        } else {
-            repoConfigs.forEach(config => displayManualCard(config.title, config.description, config.url, config.type));
-        }
-    } catch (error) {
-        console.error('Error checking rate limit:', error);
-        repoConfigs.forEach(config => displayManualCard(config.title, config.description, config.url, config.type));
-    }
-}

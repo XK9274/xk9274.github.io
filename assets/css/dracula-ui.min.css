@@ -2422,7 +2422,7 @@ code {
   border-radius: var(--rounded-lg);
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
   overflow: hidden;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .card-images {
@@ -2483,9 +2483,83 @@ code {
   margin-top: var(--spacing-xs);
 }
 
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xxs); 
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--rounded-lg);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
+  overflow: hidden;
+  max-width: 200px;
+}
+
+.card-images {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-image {
+  background-color: var(--green);
+  padding: var(--spacing-sm);
+  text-align: center;
+  flex: 1;
+}
+
+.card-image img {
+  max-width: 100%;
+  border-radius: var(--rounded-lg);
+}
+
+.card-text {
+  background-color: var(--cyan);
+  padding: var(--spacing-xs);
+  color: var(--white);
+  font-family: 'Fira Code', monospace;
+  text-align: center;
+  align-items: center;
+}
+
+.card-text a {
+  font-size: var(--font-sm);
+  color: var(--green);
+  text-decoration: none;
+}
+
+.card-text a:hover {
+  text-decoration: underline;
+}
+
+.card-text {
+  background-color: var(--cyan);
+  padding: var(--spacing-xs);
+  color: var(--white);
+  font-family: 'Fira Code', monospace;
+  text-align: center;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+.card-text p {
+  margin: var(--spacing-xxs) 0;
+}
+
+.card-text a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: var(--spacing-xs);
+}
+
 .drac-summary-box-wrapper {
   position: relative;
   color: var(--white);
+  margin-left: var(--spacing-sm); /* Reduced margin */
 }
 
 .drac-summary-box-wrapper::before {
@@ -3145,8 +3219,8 @@ code {
 
 .drac-app-container .top-bar .type-text {
     font-family: 'Fira Code', monospace;
-    color: var(--blackSecondary);
-    font-size: var(--font-xs); 
+    color: var(--white);
+    font-size: var(--font-sm); 
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-align: center;

@@ -396,6 +396,14 @@
             -> chaiNNer automation
         </a>
     </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../misc/adb_wsl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-green--hover">
+            -> ADB Through WSL2
+        </a>
+    </li>
             </ul>
         </div>
     </li>
@@ -538,27 +546,11 @@
                 <section class="p-md-5 section-content">
     <article>
         <p><div class="center-container-gen">
-    <div class="drac-terminal-background">
-        <div class="drac-terminal-panel">
-            <!-- Terminal title and icon -->
-            <div class="drac-title">
-                <div class="drac-icon">
-                    <img src="/assets/images/icon/icons8-terminal-48.png" alt="Terminal Icon">
-                </div>
-            </div>
-            <div class="drac-content">
-                <div class="drac-text">
-                    <p>Disable BLUE LED
-                    <p>(Default is 255)
-                    <br>
-                    <p>root@MIYOO282:/# echo 0 > /sys/devices/platform/axp22_board/axp22-supplyer.20/subsystem/devices/sunxi-led/leds/led1/brightness
-                    <p>root@MIYOO282:/#
-                </div>
-            </div>
-        </div>
-    </div>
+    <section class="drac-text-cyan-green drac-text-header">
+        <p>Disable BLUE LED (Default is 255)
+    </section>
 </div>
-<p><br></p>
+
 <div class="center-container-gen">
     <div class="drac-terminal-background">
         <div class="drac-terminal-panel">
@@ -570,10 +562,33 @@
             </div>
             <div class="drac-content">
                 <div class="drac-text">
-                    <p>Enable BLUE LED
-                    <p>(Default is 255)
-                    <br>
-                    <p>root@MIYOO282:/#echo 255 > /sys/devices/platform/axp22_board/axp22-supplyer.20/subsystem/devices/sunxi-led/leds/led1/brightness
+                    <p>root@MIYOO282:/# echo 0 > /sys/devices/platform/axp22_board/axp22-supplyer.20/subsystem/devices/sunxi-led/leds/led1/brightness
+                    <p>root@MIYOO282:/#
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p><br></p>
+
+<div class="center-container-gen">
+    <section class="drac-text-cyan-green drac-text-header">
+        <p>Enable BLUE LED (Default is 255)
+    </section>
+</div>
+
+<div class="center-container-gen">
+    <div class="drac-terminal-background">
+        <div class="drac-terminal-panel">
+            <!-- Terminal title and icon -->
+            <div class="drac-title">
+                <div class="drac-icon">
+                    <img src="/assets/images/icon/icons8-terminal-48.png" alt="Terminal Icon">
+                </div>
+            </div>
+            <div class="drac-content">
+                <div class="drac-text">
+                    <p>root@MIYOO282:/# echo 255 > /sys/devices/platform/axp22_board/axp22-supplyer.20/subsystem/devices/sunxi-led/leds/led1/brightness
                     <p>root@MIYOO282:/# 
                 </div>
             </div>

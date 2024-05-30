@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>-> Docker Setup - XK9274 - KB</title>
+        <title>-> ADB Through WSL2 - XK9274 - KB</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,16 +15,16 @@
         <meta name="keywords" content="Docker, WSL, Miyoo, FFMPEG, Moonlight, Python, SDL2, ScummVM, Terminfo, Mono, ZSH, mGBA, MI_SYS, MI_AO, MI_DISP, MI_GFX, MI_PANEL, BusyBox, Dropbear, Bluetooth, Trim Smart Pro, Miyoo A30, chaiNNer, image processing">
 
         
-        <link rel="canonical" href="https://xk9274.github.io/library/misc/docker/">
+        <link rel="canonical" href="https://xk9274.github.io/library/misc/adb_wsl/">
         
         
         
         <meta name="author" content="XK9274">
         
         
-        <meta property="og:title" content="-> Docker Setup">
+        <meta property="og:title" content="-> ADB Through WSL2">
         <meta property="og:description" content="Doc storage">
-        <meta property="og:url" content="https://xk9274.github.io/library/misc/docker/">
+        <meta property="og:url" content="https://xk9274.github.io/library/misc/adb_wsl/">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://xk9274.github.io//assets/images/xk_ico.png">
         
@@ -382,8 +382,8 @@
             <ul class="mb-5 drac-list drac-list-none">
                     
     <li class="drac-box-ternary">
-        <a href="./"
-            class=" active 
+        <a href="../docker/"
+            class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-green--hover">
             -> Docker Setup
         </a>
@@ -398,8 +398,8 @@
     </li>
                     
     <li class="drac-box-ternary">
-        <a href="../adb_wsl/"
-            class="
+        <a href="./"
+            class=" active 
             drac-anchor d-inline-flex align-items-center border-0 drac-text-green--hover">
             -> ADB Through WSL2
         </a>
@@ -466,13 +466,13 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href="../../a30/research/disable_blue_led/"
+                    <a href="../chainner/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </div>
                 <div class="col">
-                    <a href="../chainner/"
+                    <a href="../links/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
@@ -545,20 +545,12 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><section class="drac-text-cyan-green drac-text-header">
-  Setting up WSL2, Docker, and running your first container.
-</section>
+        <p><div class="center-container-gen">
+    <section class="drac-text-cyan-green drac-text-subheader">
+        Setting up ADB through WSL2
+    </section>
+</div>
 
-<section class="drac-text-cyan-green drac-text-subheader">
-WSL (Windows Subsystem for Linux)<br>
-</section>
-
-<p>WSL, or Windows Subsystem for Linux, is a handy feature for Windows users who want to run Linux without all the hassle. It lets you open up a Linux terminal right on your Windows machine, so you can use Linux commands and tools without needing a separate Linux computer or a virtual machine. It's perfect for developers and anyone who likes the flexibility of Linux but prefers sticking with Windows for their day-to-day stuff.</p></p>
-<section class="drac-text-cyan-green drac-text-subheader">
-Docker<br>
-</section>
-
-<p>Docker is like having a magic box for your apps. You put your application and everything it needs to run (like code, libraries, and settings) into this box, called a container. Then, you can run this container on any machine with Docker installed, and it will work exactly the same. It's super useful because it means your app can run anywhere, from your laptop to a big server in the cloud, without any weird issues popping up. Plus, it makes sharing your app with others a breeze.. We use Docker for compiling as the container can be started/stopped at will and also resets the rootfs every boot.</p>
 <div class="content-wrapper">
   <div class="card-wrapper">
     <div class="card-images">
@@ -566,136 +558,141 @@ Docker<br>
         <img src="/assets/images/icon/wsl_ico.png" alt="WSL">
       </div>
       <div class="card-image">
-        <img src="/assets/images/icon/docker-mark-white.png" alt="Docker">
+        <img src="/assets/images/icon/icons8-android-144.png" alt="Docker">
       </div>
     </div>
     <div class="card-text">
-      <p>WSL and Docker</p>
+      <p>WSL and ADB</p>
     </div>
   </div>
 
   <div class="drac-summary-box-wrapper">
     <div class="drac-summary-box">
-        <section class="drac-text-cyan-green drac-text-subheader"> 
-            What we'll be doing: 
-        </section>
-        <ol>
-            <li>Enable WSL and set WSL2 as default.</li>
-            <li>Install a Linux distribution from Microsoft Store.</li>
-            <li>Install Docker Desktop and enable WSL2 integration.</li>
-            <li>Install Git and Make in your WSL terminal.</li>
-            <li>Clone a repository and build the Docker image.</li>
-        </ol> 
+      <section class="drac-text-cyan-green drac-text-subheader">What we'll be doing:</section>
+      <ol>
+        <li>Installing USBPID</li>
+        <li>Installing ADB in WSL</li>
+        <li>Launcing an ADB shell</li>
+      </ol>
     </div>
   </div>
 </div>
 
+<p><br>
+<br>
+<br></p>
 <section class="drac-text-cyan-green drac-text-subheader">
-Step 1: Enable WSL and Install WSL2
+1. Install usbipd following this guide:
 </section>
-
-<p><strong>Enable WSL:</strong>
-   Open PowerShell as Administrator and run:
-   <div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><span class="n">wsl</span> <span class="p">-</span><span class="n">-install</span>
-</span></code></pre></div></p>
-
-<p><strong>Set WSL2 as the Default Version:</strong>
-   <div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><span class="n">wsl</span> <span class="p">-</span><span class="n">-set-default-version</span> <span class="n">2</span>
-</span></code></pre></div></p>
-
-<p><strong>Restart Your Computer:</strong>
-   Restart your computer to apply changes.</p>
-
-<section class="drac-text-cyan-green drac-text-subheader">
-Step 2: Install a Linux Distribution
-</section>
-
-<p><strong>Install a Linux Distribution:</strong>
-   Open Microsoft Store, search for your preferred Linux distribution (e.g., Ubuntu), and install it.</p>
-
-<p><strong>Set Up Your Linux Distribution:</strong>
-   Launch the installed distribution from the Start menu and complete the initial setup (create a user account and set a password).</p>
-
-<section class="drac-text-cyan-green drac-text-subheader">
-Step 3: Install Docker Desktop
-</section>
-
-<p><strong>Download Docker Desktop:</strong>
-   <a href="https://www.docker.com/products/docker-desktop" class="drac-text-green">Docker's official website</a></p>
-
-<p><strong>Enable WSL2 Integration:</strong>
-   During the installation, ensure the option "Use the WSL 2 based engine" is checked.</p>
-
-<p><strong>Finish Installation:</strong>
-   Complete the installation and start Docker Desktop.</p>
-
-<section class="drac-text-cyan-green drac-text-subheader">
-Step 4: Configure Docker to Use WSL2
-</section>
-
-<p><strong>Open Docker Desktop:</strong>
-   Go to Settings.</p>
-
-<p><strong>Enable WSL2 Integration:</strong></p>
-
-<p>Navigate to <code>Resources</code> -&gt; <code>WSL Integration</code>.
-Ensure that the Linux distribution you installed is checked to enable integration.</p>
-<section class="drac-text-cyan-green drac-text-subheader">
-Step 5: Install Make and Git in WSL
-</section>
-
-<p><strong>Open WSL Terminal:</strong>
-   Open your installed Linux distribution from the Start menu.</p>
-
-<p><strong>Update Package Lists:</strong>
-   <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1">sudo apt update
-</span></code></pre></div></p>
-
-<p><strong>Install Git and Make:</strong>
-   <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1">sudo apt install git make
-</span></code></pre></div></p>
-
-<section class="drac-text-cyan-green drac-text-subheader">
-Step 6: Clone the Repository and Build the Docker Image
-</section>
-<p>The Union toolchain is a pre-built toolchain by Shauninman. It contains everything you need to compile for the Miyoo Mini(&amp;Plus)<br><br></p>
-
-<p><strong>Clone the Repository:</strong>
-   <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1">git clone https://github.com/shauninman/union-miyoomini-toolchain.git
-</span></code></pre></div></p>
-
-<p><strong>Navigate to the Directory:</strong>
-   <div class="language-text highlight"><pre><span></span><code><span id="__span-5-1">cd union-miyoomini-toolchain
-</span></code></pre></div></p>
-
-<p><strong>Build and Run the Docker Container:</strong>
-   <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1">make shell
-</span></code></pre></div></p>
 
 <div class="center-container-gen">
-  <div class="drac-terminal-background">
-    <div class="drac-terminal-panel">
-      <div class="drac-title">
-        <div class="drac-icon">
-          <img src="/assets/images/icon/icons8-terminal-48.png" alt="Icon">
+    <a href="https://learn.microsoft.com/en-gb/windows/wsl/connect-usb#attach-a-usb-device" target="_blank" class="drac-link-embed">
+        <div class="drac-link-embed-title-bar">
+            <div class="drac-link-embed-title">USBPID Setup WSL2</div>
         </div>
+        <div class="drac-link-embed-body">
+            <div class="drac-link-embed-header">
+                <img src="https://icon.horse/icon/learn.microsoft.com/" alt="Link Icon">
+            </div>
+            <div class="drac-link-embed-content">
+                <p class="drac-link-embed-description">
+                    Setup USB Binding in WSL2
+                </p>
+                <div class="drac-link-embed-footer">
+                    <span>&nbsp;</span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<p><br></p>
+<div class="center-container-gen">
+  <div class="drac-info-panel">
+    <div class="drac-title">
+      Hey! Some info for you!
+    </div>
+    <div class="drac-content">
+      <div class="drac-icon">
+        <img src="/assets/images/icon/icons8-info-48.png" alt="Icon">
       </div>
-      <div class="drac-content">
-        <div class="drac-text">
-            <p>mattpc@MattPC:~/union-miyoomini-toolchain$ make shell
-            <p>docker run -it --rm -v "/home/mattpc/union-miyoomini-toolchain/workspace":/root/workspace miyoomini-toolchain /bin/bash
-            <p>root@7ee8499587da:~/workspace#
-        </div>
+      <div class="drac-text">
+        <p>- Take note of the warnings in this article!
+        <p>- i.e. When the USB is connected to WSL, it's inaccesible through Windows
       </div>
     </div>
   </div>
 </div>
-<p><br></p>
-<p>You're now in a containerised shell and can begin compiling; why not try this script out to compile your first Miyoo compatible binary? <br>
 
-<a href="/library/miyoo/compiling/hello-miyoo/" class="drac-text-green">The Hello-Miyoo test app</a></p>
-</p>
-<p><section class="drac-text-cyan-green drac-text-header"></p>
+<section class="drac-text-cyan-green drac-text-subheader">
+2. Install ADB in WSL:
+</section>
+<p>Open your WSL2 terminal and update your package list:
+   <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</code></pre></div></p>
+<p>Install ADB:
+   <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>adb
+</code></pre></div></p>
+<section class="drac-text-cyan-green drac-text-subheader">
+3. Verify ADB Installation:
+</section>
+<p>Check if ADB is installed correctly by running:
+   <div class="highlight"><pre><span></span><code>adb<span class="w"> </span>version
+</code></pre></div>
+   You should see output similar to:
+   <div class="highlight"><pre><span></span><code> Android Debug Bridge version 1.0.41
+ Version 34.0.5-10900879
+ Installed as C:\Users\Matt\Documents\adb\adb.exe
+ Running on Windows 10.0.22621
+</code></pre></div></p>
+<section class="drac-text-cyan-green drac-text-subheader">
+4. Connect Your Android Device via USB:
+</section>
+<p>Ensure your Android device is connected to your computer via USB. Check if your device is recognized by running:
+   <div class="highlight"><pre><span></span><code>adb<span class="w"> </span>devices
+</code></pre></div>
+   The output should list your device:
+   <div class="highlight"><pre><span></span><code>List of devices attached
+20080411        device
+</code></pre></div></p>
+<section class="drac-text-cyan-green drac-text-subheader">
+5. Launch an ADB Shell:
+</section>
+<p>You can now launch an ADB shell to interact with your device:
+   <div class="highlight"><pre><span></span><code>adb<span class="w"> </span>shell
+</code></pre></div>
+   This should drop you into a shell on your Android device:
+   <div class="highlight"><pre><span></span><code>root@MIYOO282:/#
+</code></pre></div></p>
+<div class="center-container-gen">
+    <div class="drac-terminal-background">
+        <div class="drac-terminal-panel">
+            <div class="drac-title">
+                <div class="drac-icon">
+                    <img src="/assets/images/icon/icons8-terminal-48.png" alt="Terminal Icon">
+                </div>
+            </div>
+            <div class="drac-content">
+                <div class="drac-text">
+                    <p>mattpc@MattPC:~$ adb shell
+
+
+                    <p>BusyBox v1.27.2 () built-in shell (ash)
+
+                    <p> _____  _              __     _
+                    <p>|_   _||_| ___  _ _   |  |   |_| ___  _ _  _ _
+                    <p>  | |   _ |   ||   |  |  |__ | ||   || | ||_'_|
+                    <p>  | |  | || | || _ |  |_____||_||_|_||___||_,_|
+                    <p>  |_|  |_||_|_||_|_|  Tina is Based on OpenWrt!
+                    <p> ----------------------------------------------
+                    <p> Tina Linux (Neptune, 5C1C9C53)
+                    <p> ----------------------------------------------
+                    <p>root@MIYOO282:/# exit
+                    <p>mattpc@MattPC:~$
+                </div>
+            </div>
+        </div>
+    </div>
+</div></p>
     </article>
 </section>
             <!-- endblock -->

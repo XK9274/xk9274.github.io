@@ -459,7 +459,7 @@
   --grey: #43c413c;
   --greySecondary: #30392f;
   --greyTernary: #b6b9c9;
-  --greyLight: rgba(65, 69, 88, 0.05);
+  --greyLight: #414141;
   --greyDark: #333333;
   --white: #f8f8f2;
   --whiteSecondary: #fff;
@@ -2773,6 +2773,14 @@ code {
   }
 }
 
+.top-bar.app-gradient {
+  background: linear-gradient(135deg, var(--yellow), var(--pink));
+}
+
+.top-bar.game-gradient {
+  background: linear-gradient(135deg, var(--pink), var(--purple));
+}
+
 .drac-nav-container {
   display: flex;
   align-items: center;
@@ -2891,119 +2899,19 @@ code {
   align-items: center;
 }
 
-.drac-app-container {
-  display: flex;
-  flex-direction: column;
-  border-radius: var(--rounded-lg);
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: var(--spacing-sm);
-  width: 400px;
-}
-
-.drac-app-container .top-section {
-  background-color: var(--green);
-  width: 100%;
-  height: 65px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--spacing-sm);
-  position: relative;
-}
-
-.drac-app-container .top-bar {
-  width: 20px;
-  height: 100%;
-  background-color: var(--white);
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.drac-app-container .top-bar .type-text {
-  font-family: 'Fira Code', monospace;
-  color: var(--blackSecondary);
-  font-size: var(--font-sm);
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  text-align: center;
-}
-
-.drac-app-container .top-text {
-  font-family: 'Fira Code', monospace;
-  color: var(--blackSecondary);
-  font-size: var(--font-xl);
-  font-weight: bold;
-  text-align: center;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.drac-app-container .top-text-white {
-  font-family: 'Fira Code', monospace;
-  color: var(--white);
-  font-size: var(--font-xl);
-  font-weight: bold;
-  text-align: center;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.drac-app-container .bottom-section {
-  background-color: var(--greySecondary);
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: var(--spacing-sm);
-}
-
-.drac-app-container .manual-card {
-  flex: 1;
-  padding-right: var(--spacing-sm);
-  width: 100%;
-}
-
-.drac-app-container .manual-card h2 {
-  font-size: var(--font-md);
-  font-weight: 600;
-  margin: var(--spacing-sm) 0;
-}
-
-.drac-app-container .manual-card p {
-  margin: var(--spacing-xs) 0;
-  font-size: var(--font-sm);
-  color: var(--white);
-}
-
-.top-bar.app-gradient {
-  background: linear-gradient(135deg, var(--yellow), var(--pink));
-}
-
-.top-bar.game-gradient {
-  background: linear-gradient(135deg, var(--pink), var(--purple));
-}
-
 /* Streamlined GitHub card styles */
 .streamlined-card {
   max-width: 300px;
   display: flex;
   flex-direction: column;
   border-radius: var(--rounded-lg);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.19); 
   overflow: hidden;
   position: relative;
   background-size: cover;
   background-position: center;
   margin-top: var(--spacing-sm);
+  transition: background-color 0.3s ease; 
 }
 
 .streamlined-card .streamlined-card-header {
@@ -3013,6 +2921,10 @@ code {
   color: var(--white);
   font-size: var(--font-xs);
   font-weight: 600;
+  transition: background-color 0.3s ease; 
+  border-top-left-radius: var(--rounded-lg);
+  border-top-right-radius: var(--rounded-lg);
+  margin-top: auto; 
 }
 
 .streamlined-card .streamlined-card-content {
@@ -3040,7 +2952,7 @@ code {
 }
 
 .streamlined-card .streamlined-card-details .repo-description {
-  color: var(--white);
+  color: var (--white);
   font-size: var(--font-xs);
   margin-top: var(--spacing-xxs);
 }
@@ -3052,94 +2964,107 @@ code {
   width: 100%;
 }
 
-/* Existing GitHub card styles */
+.streamlined-card:hover .streamlined-card-header {
+  background-color: var(--green);
+}
+
+/* Compact GitHub card styles */
 .github-card {
-  background-color: var(--black);
-  border-radius: var(--rounded-lg);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+    background-color: var(--black);
+    border-radius: var(--rounded-lg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.19); 
+    max-width: 280px; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-xs); 
+    transition: background-color 0.3s ease; 
 }
 
 .github-card .card-header {
-  background-color: var(--cyan);
-  padding: var(--spacing-xxs);
-  text-align: right;
-  color: var(--white);
-  font-size: calc(var(--font-xs) - 2px); 
-  font-weight: 600;
+    background-color: var(--cyan);
+    padding: var(--spacing-xxs);
+    text-align: right;
+    color: var(--white);
+    font-size: var(--font-xs);
+    font-weight: 600;
+    transition: background-color 0.3s ease; 
 }
 
 .github-card .card-content {
-  padding: var(--spacing-xxs); 
-  display: flex;
-  align-items: center;
+    padding: var(--spacing-xxs); 
+    display: flex;
+    align-items: center;
 }
 
 .github-card .card-content img {
-  border-radius: 50%;
-  margin-right: var(--spacing-xxs); 
-  width: 28px; 
-  height: 28px; 
+    border-radius: 50%;
+    margin-right: var(--spacing-xxs); 
+    width: 24px;
+    height: 24px;
 }
 
 .github-card .card-details {
-  flex: 1;
+    flex: 1;
 }
 
 .github-card .card-details .repo-name {
-  color: var(--green);
-  font-size: calc(var(--font-sm) - 2px); 
-  margin: 0;
+    color: var(--green);
+    font-size: var(--font-xs);
+    margin: 0;
 }
 
 .github-card .card-details .author-name {
-  color: var(--white);
-  font-size: calc(var(--font-xs) - 2px);
-  margin: 0;
+    color: var(--white);
+    font-size: var(--font-xxs); 
+    margin: 0;
 }
 
 .github-card .card-details .repo-description {
-  color: var(--white);
-  font-size: calc(var(--font-xs) - 2px); 
-  margin-top: var(--spacing-xxxs); 
+    color: var(--white);
+    font-size: var(--font-xxs); 
+    margin-top: var(--spacing-xxxs); 
 }
 
-/* CSS for Google Drive Cards */
+/* Change the header color on card hover */
+.github-card:hover .card-header {
+    background-color: var(--green);
+}
+
+
+/* Compact Google Drive card styles */
 .google-drive-card {
     background-color: var(--black);
     border-radius: var(--rounded-lg);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.19); 
+    max-width: 360px; 
     width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    margin-top: var(--spacing-sm);
+    padding: var(--spacing-xs);
 }
 
 .google-drive-card .card-header {
     background-color: var(--cyan);
-    padding: var(--spacing-sm);
+    padding: var(--spacing-xs); 
     text-align: center;
     color: var(--white);
-    font-size: var(--font-md);
+    font-size: var(--font-sm); 
     font-weight: 600;
 }
 
 .google-drive-card .card-content {
-    padding: var(--spacing-sm);
+    padding: var(--spacing-xs); 
     display: flex;
     align-items: center;
 }
 
 .google-drive-card .card-content img {
     border-radius: var(--rounded-lg);
-    margin-right: var(--spacing-xs);
-    width: 48px;
-    height: 48px;
+    margin-right: var(--spacing-xxs);
+    width: 40px;
+    height: 40px; 
 }
 
 .google-drive-card .card-details {
@@ -3148,28 +3073,131 @@ code {
 
 .google-drive-card .card-details .drive-file-name {
     color: var(--green);
-    font-size: var(--font-md);
+    font-size: var(--font-sm);
     margin: 0;
 }
 
 .google-drive-card .card-details .drive-file-type {
     color: var(--white);
-    font-size: var(--font-sm);
+    font-size: var(--font-xs);
     margin: 0;
 }
 
 .google-drive-card .card-details .drive-file-description {
     color: var(--white);
-    font-size: var(--font-sm);
+    font-size: var(--font-xs); 
     margin-top: var(--spacing-xxs);
 }
 
 .google-drive-card .card-footer {
     background-color: var(--cyan);
-    padding: var(--spacing-xs);
+    padding: var(--spacing-xxs);
     text-align: center;
     color: var(--white);
-    font-size: var(--font-sm);
+    font-size: var(--font-xs);
+    border-bottom-left-radius: var(--rounded-lg);
+    border-bottom-right-radius: var(--rounded-lg);
+    transition: background-color 0.3s ease;
+    margin-top: auto; 
+}
+
+.google-drive-card:hover .card-footer {
+    background-color: var(--green);
+}
+
+
+/* Compact app container styles */
+.drac-app-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--rounded-lg);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.19); 
+    margin: var(--spacing-xs); 
+    width: 360px; 
+}
+
+.drac-app-container .top-section {
+    background-color: var(--green);
+    width: 100%;
+    height: 55px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xs); 
+    position: relative;
+}
+
+.drac-app-container .top-bar {
+    width: 18px; 
+    height: 100%;
+    background-color: var(--white);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drac-app-container .top-bar .type-text {
+    font-family: 'Fira Code', monospace;
+    color: var(--blackSecondary);
+    font-size: var(--font-xs); 
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+}
+
+.drac-app-container .top-text {
+    font-family: 'Fira Code', monospace;
+    color: var(--blackSecondary);
+    font-size: var(--font-lg); 
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drac-app-container .top-text-white {
+    font-family: 'Fira Code', monospace;
+    color: var(--white);
+    font-size: var(--font-lg); 
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drac-app-container .bottom-section {
+    background-color: var(--greySecondary);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-xs); 
+}
+
+.drac-app-container .manual-card {
+    flex: 1;
+    padding-right: var(--spacing-xs); 
+    width: 100%;
+}
+
+.drac-app-container .manual-card h2 {
+    font-size: var(--font-sm); 
+    font-weight: 600;
+    margin: var(--spacing-xs) 0; 
+}
+
+.drac-app-container .manual-card p {
+    margin: var(--spacing-xxs) 0; 
+    font-size: var(--font-xs); 
+    color: var(--white);
 }
 
 .drac-link-embed {
@@ -3177,11 +3205,12 @@ code {
     flex-direction: column;
     border-radius: var(--rounded-lg);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.19); 
-    background-color: var(--grey);
+    background-color: var(--greyLight);
     max-width: 400px;
     min-width: 400px;
     overflow: hidden;
     margin: var(--spacing-xs) 0;
+    transition: background-color 0.3s ease; 
 }
 
 .drac-link-embed-title-bar {
@@ -3190,6 +3219,7 @@ code {
     text-align: center;
     padding: var(--spacing-xxxs);
     height: 25px;
+    transition: background-color 0.3s ease; 
 }
 
 .drac-link-embed-title {
@@ -3211,7 +3241,7 @@ code {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--grey);
+    background-color: var(--greyLight);
     width: 100px;
     padding: var(--spacing-xs);
 }
@@ -3237,7 +3267,6 @@ code {
 
 .drac-link-embed-description {
     font-size: var(--font-xs);
-    /* font-weight: bold;  */
     margin: var(--spacing-xs) 0;
 }
 
@@ -3254,8 +3283,8 @@ code {
     left: 100px;
     height: 25px;
     box-sizing: border-box;
+    transition: background-color 0.3s ease; 
 }
-
 
 .drac-link-embed-footer a {
     color: var(--white);
@@ -3267,6 +3296,11 @@ code {
     text-decoration: underline;
 }
 
+/* Change the header and footer color on card hover */
+.drac-link-embed:hover .drac-link-embed-title-bar,
+.drac-link-embed:hover .drac-link-embed-footer {
+    background-color: var(--green);
+}
 p {
     margin-top: 0;
     margin-bottom: 1rem;

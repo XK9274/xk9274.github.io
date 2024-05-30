@@ -14,9 +14,9 @@ function displayDriveCards(files) {
                     <p class="drive-file-description">${file.description}</p>
                 </div>
             </div>
-            <div class="card-footer">
-                <a href="${file.url}" target="_blank" style="color: var(--white);">Download</a>
-            </div>
+            <a href="${file.url}" target="_blank" class="card-footer">
+                Download
+            </a>
         `;
 
         centerContainer.appendChild(cardContainer);

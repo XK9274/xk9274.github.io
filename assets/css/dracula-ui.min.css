@@ -2541,30 +2541,65 @@ code {
 }
 
 .container-new {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: var(--spacing-lg);
-    padding: var(--spacing-lg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
 }
 
 .column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-lg);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  width: 100%; 
 }
 
 @media (max-width: 768px) {
-    .container-new {
-        flex-direction: column;
-        padding: var(--spacing-sm);
-    }
+  .container-new {
+    flex-direction: column;
+    padding: var(--spacing-sm);
+  }
 
-    .column {
-        width: 100%;
-    }
+  .column {
+    width: 100%;
+    max-width: 100%; 
+  }
+
+  .github-card, .google-drive-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .drac-image-card-wrapper, .drac-info-panel, .drac-terminal-panel, .drac-app-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .drac-terminal-panel .drac-title,
+  .drac-terminal-panel .drac-text,
+  .drac-terminal-panel .drac-icon {
+    font-size: var(--font-sm);
+    padding: var(--spacing-xxs);
+  }
+  
+  .drac-terminal-panel .drac-text {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.25rem;
+  }
+
+  .drac-terminal-panel .drac-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .drac-link-embed {
+    max-width: 100%;
+    min-width: auto;
+  }
 }
+
 
 .center-container-gen,
 .center-container-gen-drive {
@@ -2572,6 +2607,7 @@ code {
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-sm);
+  width: 100%;
 }
 
 .drac-info-panel {
@@ -2730,6 +2766,11 @@ code {
     width: 24px;
     height: 24px;
   }
+
+  .drac-link-embed {
+    max-width: 100%;
+    min-width: auto;
+  }
 }
 
 .drac-nav-container {
@@ -2800,7 +2841,7 @@ code {
   border-radius: var(--rounded-lg);
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 640px;
+  width: 400px;
   margin: var(--spacing-sm);
 }
 

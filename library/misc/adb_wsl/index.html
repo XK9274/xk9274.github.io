@@ -572,18 +572,11 @@
       <ol>
         <li>Installing USBPID</li>
         <li>Installing ADB in WSL</li>
-        <li>Launcing an ADB shell</li>
+        <li>Launching an ADB shell</li>
       </ol>
     </div>
   </div>
 </div>
-
-<p><br>
-<br>
-<br></p>
-<section class="drac-text-cyan-green drac-text-subheader">
-1. Install usbipd following this guide:
-</section>
 
 <div class="center-container-gen">
     <a href="https://learn.microsoft.com/en-gb/windows/wsl/connect-usb#attach-a-usb-device" target="_blank" class="drac-link-embed">
@@ -596,7 +589,7 @@
             </div>
             <div class="drac-link-embed-content">
                 <p class="drac-link-embed-description">
-                    Setup USB Binding in WSL2
+                    Setup USB Binding in WSL2 - Microsoft guide
                 </p>
                 <div class="drac-link-embed-footer">
                     <span>&nbsp;</span>
@@ -605,35 +598,62 @@
         </div>
     </a>
 </div>
-<p><br></p>
-<div class="center-container-gen">
-  <div class="drac-info-panel">
-    <div class="drac-title">
-      Hey! Some info for you!
-    </div>
-    <div class="drac-content">
-      <div class="drac-icon">
-        <img src="/assets/images/icon/icons8-info-48.png" alt="Icon">
-      </div>
-      <div class="drac-text">
-        <p>- Take note of the warnings in this article!
-        <p>- i.e. When the USB is connected to WSL, it's inaccesible through Windows
-      </div>
-    </div>
-  </div>
-</div>
 
+<p><br>
+<br></p>
 <section class="drac-text-cyan-green drac-text-subheader">
-2. Install ADB in WSL:
+1. Install usbipd through admin PowerShell:
+</section>
+<p>Open Powershell as admin and run the following:
+   <div class="highlight"><pre><span></span><code>winget install --interactive --exact dorssel.usbipd-win
+</code></pre></div>
+<br></p>
+<section class="drac-text-cyan-green drac-text-subheader">
+2. Run usbipd to get the BUSID of the USB device:
+</section>
+<p>List your USB devices:
+   <div class="highlight"><pre><span></span><code>usbipd list
+</code></pre></div></p>
+<p>E.g: 
+   <div class="highlight"><pre><span></span><code>BUSID  VID:PID    DEVICE                                                        STATE
+1-10   1f3a:1007  Tina                                                          Not shared
+</code></pre></div>
+<br></p>
+<section class="drac-text-cyan-green drac-text-subheader">
+3. Now, bind the USB device:
+</section>
+<p>List your USB devices:
+   <div class="highlight"><pre><span></span><code>usbipd bind --busid 1-10
+</code></pre></div>
+<br>  </p>
+<section class="drac-text-cyan-green drac-text-subheader">
+4. Attach the USB device to WSL2:
+</section>
+<p>List your USB devices:
+   <div class="highlight"><pre><span></span><code>usbipd attach --wsl --busid 1-10
+</code></pre></div>
+<br></p>
+<section class="drac-text-cyan-green drac-text-subheader">
+5. In WSL, confirm the USB device is now visible:
+</section>
+<p><div class="highlight"><pre><span></span><code>mattpc@MattPC:~$ lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 002: ID 1f3a:1007 Allwinner Technology Tina
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+</code></pre></div>
+<br></p>
+<section class="drac-text-cyan-green drac-text-subheader">
+6. Install ADB in WSL:
 </section>
 <p>Open your WSL2 terminal and update your package list:
    <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
 </code></pre></div></p>
 <p>Install ADB:
    <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>adb
-</code></pre></div></p>
+</code></pre></div>
+<br></p>
 <section class="drac-text-cyan-green drac-text-subheader">
-3. Verify ADB Installation:
+7. Verify ADB Installation:
 </section>
 <p>Check if ADB is installed correctly by running:
    <div class="highlight"><pre><span></span><code>adb<span class="w"> </span>version
@@ -641,11 +661,12 @@
    You should see output similar to:
    <div class="highlight"><pre><span></span><code> Android Debug Bridge version 1.0.41
  Version 34.0.5-10900879
- Installed as C:\Users\Matt\Documents\adb\adb.exe
+ Installed as /usr/bin/adb
  Running on Windows 10.0.22621
-</code></pre></div></p>
+</code></pre></div>
+<br></p>
 <section class="drac-text-cyan-green drac-text-subheader">
-4. Connect Your Android Device via USB:
+8. Connect Your Android Device via USB:
 </section>
 <p>Ensure your Android device is connected to your computer via USB. Check if your device is recognized by running:
    <div class="highlight"><pre><span></span><code>adb<span class="w"> </span>devices
@@ -653,16 +674,18 @@
    The output should list your device:
    <div class="highlight"><pre><span></span><code>List of devices attached
 20080411        device
-</code></pre></div></p>
+</code></pre></div>
+<br></p>
 <section class="drac-text-cyan-green drac-text-subheader">
-5. Launch an ADB Shell:
+9. Launch an ADB Shell:
 </section>
 <p>You can now launch an ADB shell to interact with your device:
    <div class="highlight"><pre><span></span><code>adb<span class="w"> </span>shell
 </code></pre></div>
    This should drop you into a shell on your Android device:
    <div class="highlight"><pre><span></span><code>root@MIYOO282:/#
-</code></pre></div></p>
+</code></pre></div>
+<br></p>
 <div class="center-container-gen">
     <div class="drac-terminal-background">
         <div class="drac-terminal-panel">
@@ -688,6 +711,7 @@
                     <p> ----------------------------------------------
                     <p>root@MIYOO282:/# exit
                     <p>mattpc@MattPC:~$
+                    <p> ----------------------------------------------
                 </div>
             </div>
         </div>

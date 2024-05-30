@@ -452,113 +452,113 @@
   width: var(--sizing-8xl);
 }
 :root {
-  --black: #2c2c2c;
-  --blackSecondary: #3c3c3c;
-  --blackTernary: #b3b6c6;
+  --black: #1b1b1b;
+  --blackSecondary: #2b2b2b;
+  --blackTernary: #a7abbe;
   --blackLight: rgba(33, 34, 44, 0.05);
-  --grey: #545454;
-  --greySecondary: #454f43;
-  --greyTernary: #c6c9d9;
-  --greyLight: #515151;
-  --greyDark: #444444;
-  --white: #fafafa;
-  --whiteSecondary: #ffffff;
+  --grey: #43c413c;
+  --greySecondary: #30392f;
+  --greyTernary: #b6b9c9;
+  --greyLight: #414141;
+  --greyDark: #333333;
+  --white: #f8f8f2;
+  --whiteSecondary: #fff;
   --whiteLight: hsla(60, 30%, 96%, 0.05);
-  --cyan: #7aa6a3;
-  --cyanSecondary: #ecfffa;
-  --cyanLight: rgba(160, 255, 248, 0.05);
-  --green: #82e1b6;
-  --greenSecondary: #ecffeb;
-  --greenLight: rgba(174, 255, 160, 0.05);
-  --greenAlt: #7faa7c;
-  --orange: #ffe0c4;
-  --orangeSecondary: #fff6ec;
-  --orangeLight: rgba(255, 224, 196, 0.05);
-  --pink: #ffc0db;
-  --pinkSecondary: #ffeff6;
-  --pinkLight: rgba(255, 192, 219, 0.05);
-  --purple: #d29cd2;
-  --purpleSecondary: #f0e6ff;
-  --purpleLight: rgba(200, 160, 255, 0.05);
-  --red: #ffc0b4;
-  --redSecondary: #ffebe6;
-  --redLight: rgba(255, 192, 180, 0.05);
-  --yellow: #ffffc0;
-  --yellowSecondary: #fffce6;
-  --yellowLight: rgba(255, 255, 192, 0.05);
-  --cyan-transparent: rgba(160, 255, 248, 0.1);
-  --green-transparent: rgba(174, 255, 160, 0.1);
-  --orange-transparent: rgba(255, 224, 196, 0.1);
-  --pink-transparent: rgba(255, 192, 219, 0.1);
-  --purple-transparent: rgba(200, 160, 255, 0.1);
-  --red-transparent: rgba(255, 192, 180, 0.1);
-  --yellow-transparent: rgba(255, 255, 192, 0.1);
-  --disabled: #8b8f9b;
+  --cyan: #3a9590;
+  --cyanSecondary: #ccfff6;
+  --cyanLight: rgba(128, 255, 234, 0.05);
+  --green: #43df95;
+  --greenSecondary: #d0ffcc;
+  --greenLight: rgba(138, 255, 128, 0.05);
+  --greenAlt: #52964c;
+  --orange: #ffca80;
+  --orangeSecondary: #ffeacc;
+  --orangeLight: rgba(255, 202, 128, 0.05);
+  --pink: #ff80bf;
+  --pinkSecondary: #ffcce6;
+  --pinkLight: rgba(255, 128, 191, 0.05);
+  --purple: #ab39b8;
+  --purpleSecondary: #d4ccff;
+  --purpleLight: rgba(149, 128, 255, 0.05);
+  --red: #ff9580;
+  --redSecondary: #ffd4cc;
+  --redLight: rgba(255, 149, 128, 0.05);
+  --yellow: #ffff80;
+  --yellowSecondary: #ffc;
+  --yellowLight: rgba(255, 255, 128, 0.05);
+  --cyan-transparent: rgba(128, 255, 234, 0.1);
+  --green-transparent: rgba(138, 255, 128, 0.1);
+  --orange-transparent: rgba(255, 202, 128, 0.1);
+  --pink-transparent: rgba(255, 128, 191, 0.1);
+  --purple-transparent: rgba(149, 128, 255, 0.1);
+  --red-transparent: rgba(255, 149, 128, 0.1);
+  --yellow-transparent: rgba(255, 255, 128, 0.1);
+  --disabled: #6c7393;
   --gradientDegree: 135deg;
   --glowColor: hsla(0, 0%, 100%, 0.25);
-  --cyan-100: rgba(160, 255, 248, 0.1);
-  --green-100: rgba(174, 255, 160, 0.1);
-  --orange-100: rgba(255, 224, 196, 0.1);
-  --pink-100: rgba(255, 192, 219, 0.1);
-  --purple-100: rgba(200, 160, 255, 0.1);
-  --red-100: rgba(255, 192, 180, 0.1);
-  --yellow-100: rgba(255, 255, 192, 0.1);
-  --cyan-200: rgba(160, 255, 248, 0.2);
-  --green-200: rgba(174, 255, 160, 0.2);
-  --orange-200: rgba(255, 224, 196, 0.2);
-  --pink-200: rgba(255, 192, 219, 0.2);
-  --purple-200: rgba(200, 160, 255, 0.2);
-  --red-200: rgba(255, 192, 180, 0.2);
-  --yellow-200: rgba(255, 255, 192, 0.2);
-  --cyan-300: rgba(160, 255, 248, 0.3);
-  --green-300: rgba(174, 255, 160, 0.3);
-  --orange-300: rgba(255, 224, 196, 0.3);
-  --pink-300: rgba(255, 192, 219, 0.3);
-  --purple-300: rgba(200, 160, 255, 0.3);
-  --red-300: rgba(255, 192, 180, 0.3);
-  --yellow-300: rgba(255, 255, 192, 0.3);
-  --cyan-400: rgba(160, 255, 248, 0.4);
-  --green-400: rgba(174, 255, 160, 0.4);
-  --orange-400: rgba(255, 224, 196, 0.4);
-  --pink-400: rgba(255, 192, 219, 0.4);
-  --purple-400: rgba(200, 160, 255, 0.4);
-  --red-400: rgba(255, 192, 180, 0.4);
-  --yellow-400: rgba(255, 255, 192, 0.4);
-  --cyan-500: rgba(160, 255, 248, 0.5);
-  --green-500: rgba(174, 255, 160, 0.5);
-  --orange-500: rgba(255, 224, 196, 0.5);
-  --pink-500: rgba(255, 192, 219, 0.5);
-  --purple-500: rgba(200, 160, 255, 0.5);
-  --red-500: rgba(255, 192, 180, 0.5);
-  --yellow-500: rgba(255, 255, 192, 0.5);
-  --cyan-600: rgba(160, 255, 248, 0.6);
-  --green-600: rgba(174, 255, 160, 0.6);
-  --orange-600: rgba(255, 224, 196, 0.6);
-  --pink-600: rgba(255, 192, 219, 0.6);
-  --purple-600: rgba(200, 160, 255, 0.6);
-  --red-600: rgba(255, 192, 180, 0.6);
-  --yellow-600: rgba(255, 255, 192, 0.6);
-  --cyan-700: rgba(160, 255, 248, 0.7);
-  --green-700: rgba(174, 255, 160, 0.7);
-  --orange-700: rgba(255, 224, 196, 0.7);
-  --pink-700: rgba(255, 192, 219, 0.7);
-  --purple-700: rgba(200, 160, 255, 0.7);
-  --red-700: rgba(255, 192, 180, 0.7);
-  --yellow-700: rgba(255, 255, 192, 0.7);
-  --cyan-800: rgba(160, 255, 248, 0.8);
-  --green-800: rgba(174, 255, 160, 0.8);
-  --orange-800: rgba(255, 224, 196, 0.8);
-  --pink-800: rgba(255, 192, 219, 0.8);
-  --purple-800: rgba(200, 160, 255, 0.8);
-  --red-800: rgba(255, 192, 180, 0.8);
-  --yellow-800: rgba(255, 255, 192, 0.8);
-  --cyan-900: rgba(160, 255, 248, 0.9);
-  --green-900: rgba(174, 255, 160, 0.9);
-  --orange-900: rgba(255, 224, 196, 0.9);
-  --pink-900: rgba(255, 192, 219, 0.9);
-  --purple-900: rgba(200, 160, 255, 0.9);
-  --red-900: rgba(255, 192, 180, 0.9);
-  --yellow-900: rgba(255, 255, 192, 0.9);
+  --cyan-100: rgba(128, 255, 234, 0.1);
+  --green-100: rgba(138, 255, 128, 0.1);
+  --orange-100: rgba(255, 202, 128, 0.1);
+  --pink-100: rgba(255, 128, 191, 0.1);
+  --purple-100: rgba(149, 128, 255, 0.1);
+  --red-100: rgba(255, 149, 128, 0.1);
+  --yellow-100: rgba(255, 255, 128, 0.1);
+  --cyan-200: rgba(128, 255, 234, 0.2);
+  --green-200: rgba(138, 255, 128, 0.2);
+  --orange-200: rgba(255, 202, 128, 0.2);
+  --pink-200: rgba(255, 128, 191, 0.2);
+  --purple-200: rgba(149, 128, 255, 0.2);
+  --red-200: rgba(255, 149, 128, 0.2);
+  --yellow-200: rgba(255, 255, 128, 0.2);
+  --cyan-300: rgba(128, 255, 234, 0.3);
+  --green-300: rgba(138, 255, 128, 0.3);
+  --orange-300: rgba(255, 202, 128, 0.3);
+  --pink-300: rgba(255, 128, 191, 0.3);
+  --purple-300: rgba(149, 128, 255, 0.3);
+  --red-300: rgba(255, 149, 128, 0.3);
+  --yellow-300: rgba(255, 255, 128, 0.3);
+  --cyan-400: rgba(128, 255, 234, 0.4);
+  --green-400: rgba(138, 255, 128, 0.4);
+  --orange-400: rgba(255, 202, 128, 0.4);
+  --pink-400: rgba(255, 128, 191, 0.4);
+  --purple-400: rgba(149, 128, 255, 0.4);
+  --red-400: rgba(255, 149, 128, 0.4);
+  --yellow-400: rgba(255, 255, 128, 0.4);
+  --cyan-500: rgba(128, 255, 234, 0.5);
+  --green-500: rgba(138, 255, 128, 0.5);
+  --orange-500: rgba(255, 202, 128, 0.5);
+  --pink-500: rgba(255, 128, 191, 0.5);
+  --purple-500: rgba(149, 128, 255, 0.5);
+  --red-500: rgba(255, 149, 128, 0.5);
+  --yellow-500: rgba(255, 255, 128, 0.5);
+  --cyan-600: rgba(128, 255, 234, 0.6);
+  --green-600: rgba(138, 255, 128, 0.6);
+  --orange-600: rgba(255, 202, 128, 0.6);
+  --pink-600: rgba(255, 128, 191, 0.6);
+  --purple-600: rgba(149, 128, 255, 0.6);
+  --red-600: rgba(255, 149, 128, 0.6);
+  --yellow-600: rgba(255, 255, 128, 0.6);
+  --cyan-700: rgba(128, 255, 234, 0.7);
+  --green-700: rgba(138, 255, 128, 0.7);
+  --orange-700: rgba(255, 202, 128, 0.7);
+  --pink-700: rgba(255, 128, 191, 0.7);
+  --purple-700: rgba(149, 128, 255, 0.7);
+  --red-700: rgba(255, 149, 128, 0.7);
+  --yellow-700: rgba(255, 255, 128, 0.7);
+  --cyan-800: rgba(128, 255, 234, 0.8);
+  --green-800: rgba(138, 255, 128, 0.8);
+  --orange-800: rgba(255, 202, 128, 0.8);
+  --pink-800: rgba(255, 128, 191, 0.8);
+  --purple-800: rgba(149, 128, 255, 0.8);
+  --red-800: rgba(255, 149, 128, 0.8);
+  --yellow-800: rgba(255, 255, 128, 0.8);
+  --cyan-900: rgba(128, 255, 234, 0.9);
+  --green-900: rgba(138, 255, 128, 0.9);
+  --orange-900: rgba(255, 202, 128, 0.9);
+  --pink-900: rgba(255, 128, 191, 0.9);
+  --purple-900: rgba(149, 128, 255, 0.9);
+  --red-900: rgba(255, 149, 128, 0.9);
+  --yellow-900: rgba(255, 255, 128, 0.9);
   --accentColor: var(--green);
   --purple-cyan: linear-gradient(
     var(--gradientDegree),
@@ -794,7 +794,7 @@ code {
   -moz-appearance: none;
   appearance: none;
   border: none;
-  border-radius: var(--rounded-md);
+  border-radius: var(--rounded-lg);
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
@@ -877,7 +877,7 @@ code {
 .drac-badge {
   background-color: var(--accentColor);
   border: none;
-  border-radius: var(--rounded-md);
+  border-radius: var(--rounded-lg);
   padding: 1rem 1.5rem;
 }
 .drac-badge,
@@ -896,7 +896,7 @@ code {
   -webkit-appearance: textfield;
   background: var(--blackSecondary);
   border: 0.3rem solid transparent;
-  border-radius: var(--rounded-md);
+  border-radius: var(--rounded-lg);
   box-sizing: border-box;
   outline: none;
   transition: all 0.3s ease-in-out;
@@ -995,7 +995,7 @@ code {
   appearance: none;
   background: var(--blackSecondary);
   border: 0.3rem solid transparent;
-  border-radius: var(--rounded-md);
+  border-radius: var(--rounded-lg);
   box-sizing: border-box;
   color: var(--white);
   outline: none;
@@ -1769,7 +1769,7 @@ code {
 }
 .drac-card {
   background-color: var(--accentColor);
-  border-radius: var(--rounded-md);
+  border-radius: var(--rounded-lg);
   box-shadow: -2px var(--glow-spacing-x) var(--glow-spacing-y) var(--glowColor);
 }
 .drac-card-subtle {
@@ -2407,8 +2407,6 @@ code {
     align-items: center;
     justify-content: center;
     width: 100%;
-    transform: scale(0.85);
-    transform-origin: top left; 
 }
 
 .content-wrapper {
@@ -2421,7 +2419,7 @@ code {
 .card-wrapper {
   display: flex;
   flex-direction: column;
-  border-radius: var(--rounded-md);
+  border-radius: var(--rounded-lg);
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
   overflow: hidden;
   max-width: 200px;
@@ -2441,7 +2439,7 @@ code {
 
 .card-image img {
   max-width: 100%;
-  border-radius: var(--rounded-md);
+  border-radius: var(--rounded-lg);
 }
 
 .card-text {
@@ -2495,7 +2493,7 @@ code {
 .card-wrapper {
   display: flex;
   flex-direction: column;
-  border-radius: var(--rounded-md);
+  border-radius: var(--rounded-lg);
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
   overflow: hidden;
   max-width: 200px;
@@ -2515,7 +2513,7 @@ code {
 
 .card-image img {
   max-width: 100%;
-  border-radius: var(--rounded-md);
+  border-radius: var(--rounded-lg);
 }
 
 .card-text {
@@ -2561,7 +2559,7 @@ code {
 .drac-summary-box-wrapper {
   position: relative;
   color: var(--white);
-  margin-left: var(--spacing-sm); 
+  margin-left: var(--spacing-sm); /* Reduced margin */
 }
 
 .drac-summary-box-wrapper::before {
@@ -2569,12 +2567,12 @@ code {
   position: absolute;
   background-color: var(--black);
   z-index: -1;
-  border-radius: var(--rounded-md);
+  border-radius: var(--rounded-lg);
 }
 
 .drac-summary-box {
   background-color: var(--blackSecondary);
-  border-radius: var(--rounded-md);
+  border-radius: var(--rounded-lg);
   padding: var(--spacing-md);
   color: var(--white);
   font-family: 'Fira Code', monospace;
@@ -2601,17 +2599,17 @@ code {
 }
 .drac-text-header {
   font-family: 'Fira Code', monospace;
-  font-size: var(--font-2xl);
+  font-size: var(--font-4xl);
   font-weight: 700; 
-  line-height: var(--line-height-xs);
+  line-height: var(--line-height-xl);
   text-align: center; 
   margin: var(--spacing-md) 0; 
 }
 .drac-text-subheader {
   font-family: 'Fira Code', monospace;
-  font-size: var(--font-xl); 
+  font-size: var(--font-3xl); 
   font-weight: 600; 
-  line-height: var(--line-height-xs);
+  line-height: var(--line-height-lg);
   text-align: left; 
   margin: var(--spacing-sm) 0;
 }
@@ -2661,7 +2659,7 @@ code {
   }
   
   .drac-terminal-panel .drac-text {
-    font-size: var(--font-sm);
+    font-size: 0.65rem;
     padding: 0.25rem 0.25rem;
   }
 
@@ -2688,7 +2686,7 @@ code {
 
 .drac-info-panel {
   background-color: var(--cyan);
-  border-radius: var(--rounded-md);
+  border-radius: var(--rounded-lg);
   font-family: 'Fira Code', monospace;
   max-width: 450px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
@@ -2736,7 +2734,7 @@ code {
 
 .drac-terminal-background {
   background-color: var(--cyan);
-  border-radius: var(--rounded-md);
+  border-radius: var(--rounded-lg);
   padding: var(--spacing-xs);
   display: flex;
   justify-content: center;
@@ -2746,7 +2744,7 @@ code {
 
 .drac-terminal-panel {
   background-color: var(--cyan);
-  border-radius: var(--rounded-md);
+  border-radius: var(--rounded-lg);
   font-family: 'Fira Code', monospace;
   width: 100%;
   max-width: 100%;
@@ -2786,8 +2784,8 @@ code {
   background-color: var(--black);
   padding: var(--spacing-xs);
   color: var(--white);
-  border-bottom-left-radius: var(--rounded-sm);
-  border-bottom-right-radius: var(--rounded-sm);
+  border-bottom-left-radius: var(--rounded-lg);
+  border-bottom-right-radius: var(--rounded-lg);
   text-align: left;
   flex: 1;
   width: 100%;
@@ -2799,7 +2797,7 @@ code {
   color: #f8f8f2; 
   font-family: 'Fira Code', monospace; 
   font-size: 0.65rem;
-  line-height: 0.85;
+  line-height: 1;
   padding: 0.1rem 0.25rem; 
   border-radius: var(--rounded-sm);
   white-space: pre-wrap; 
@@ -2885,14 +2883,14 @@ code {
     width: 100%;
     max-width: 1200px;
     margin-top: var(--spacing-sm);
-    border-radius: var(--rounded-sm);
+    border-radius: var(--rounded-lg);
 }
 
 .drac-rounded-img-small {
     width: 100%;
     max-width: 600px;
     margin-top: var(--spacing-sm);
-    border-radius: var(--rounded-sm);
+    border-radius: var(--rounded-lg);
 }
 
 .sidebar .drac-text,
@@ -2926,7 +2924,7 @@ code {
   display: flex;
   flex-direction: column;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
-  border-radius: var(--rounded-sm);
+  border-radius: var(--rounded-lg);
   overflow: hidden;
   width: 400px;
   margin: var(--spacing-sm);
@@ -2948,7 +2946,7 @@ code {
 
 .drac-image-card-image img {
   width: 100%;
-  border-radius: var(--rounded-sm);
+  border-radius: var(--rounded-lg);
 }
 
 .drac-image-card-text {
@@ -2983,7 +2981,7 @@ code {
   max-width: 300px;
   display: flex;
   flex-direction: column;
-  border-radius: var(--rounded-sm);
+  border-radius: var(--rounded-lg);
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
   overflow: hidden;
   position: relative;
@@ -3001,8 +2999,8 @@ code {
   font-size: var(--font-xs);
   font-weight: 600;
   transition: background-color 0.3s ease; 
-  border-top-left-radius: var(--rounded-sm);
-  border-top-right-radius: var(--rounded-sm);
+  border-top-left-radius: var(--rounded-lg);
+  border-top-right-radius: var(--rounded-lg);
   margin-top: auto; 
 }
 
@@ -3050,7 +3048,7 @@ code {
 /* Compact GitHub card styles */
 .github-card {
     background-color: var(--black);
-    border-radius: var(--rounded-sm);
+    border-radius: var(--rounded-lg);
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
     max-width: 280px; 
     overflow: hidden;
@@ -3114,7 +3112,7 @@ code {
 /* Compact Google Drive card styles */
 .google-drive-card {
     background-color: var(--black);
-    border-radius: var(--rounded-sm);
+    border-radius: var(--rounded-lg);
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
     max-width: 360px; 
     width: 100%;
@@ -3140,7 +3138,7 @@ code {
 }
 
 .google-drive-card .card-content img {
-    border-radius: var(--rounded-sm);
+    border-radius: var(--rounded-lg);
     margin-right: var(--spacing-xxs);
     width: 40px;
     height: 40px; 
@@ -3174,8 +3172,8 @@ code {
     text-align: center;
     color: var(--white);
     font-size: var(--font-xs);
-    border-bottom-left-radius: var(--rounded-sm);
-    border-bottom-right-radius: var(--rounded-sm);
+    border-bottom-left-radius: var(--rounded-lg);
+    border-bottom-right-radius: var(--rounded-lg);
     transition: background-color 0.3s ease;
     margin-top: auto; 
 }
@@ -3189,7 +3187,7 @@ code {
 .drac-app-container {
     display: flex;
     flex-direction: column;
-    border-radius: var(--rounded-sm);
+    border-radius: var(--rounded-lg);
     overflow: hidden;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
     margin: var(--spacing-xs); 
@@ -3282,7 +3280,7 @@ code {
 .drac-link-embed {
     display: flex;
     flex-direction: column;
-    border-radius: var(--rounded-sm);
+    border-radius: var(--rounded-lg);
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
     background-color: var(--greyLight);
     max-width: 400px;
@@ -3328,7 +3326,7 @@ code {
 .drac-link-embed-header img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: var(--rounded-sm);
+    border-radius: var(--rounded-lg);
 }
 
 .drac-link-embed-content {
@@ -3345,7 +3343,8 @@ code {
 }
 
 .drac-link-embed-description {
-    font-size: var(--font-sm);
+    font-size: var(--font-xs);
+    margin: var(--spacing-xs) 0;
 }
 
 .drac-link-embed-footer {
@@ -3379,13 +3378,8 @@ code {
 .drac-link-embed:hover .drac-link-embed-footer {
     background-color: var(--green);
 }
-
 p {
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: var(--font-sm);
-}
-
-.footer-text {
-    font-size: 12px; 
 }

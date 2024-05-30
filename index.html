@@ -82,7 +82,7 @@
                 <!-- GitHub link -->
                 <li class="drac-nav-item">
                     <a class="drac-nav-link" href="https://github.com/xk9274" target="_blank">
-                        <img src="/assets/images/icon/github-mark-white.png" alt="GitHub">
+                        <i class="fa fa-github-alt"></i>
                     </a>
                 </li>
                 
@@ -475,7 +475,12 @@
                     <!--  endblock -->
                    
                     <!-- block search -->
-                    <li class="nav-item">
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="./search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search" title="Type search term here" />
+	</form>
+</div>
                     </li>
                     <!--  endblock -->
 
@@ -568,6 +573,7 @@
         <script src="assets/js/mkdocs.js"></script>
             <script src="assets/js/ghq.js" defer></script>
             <script src="assets/js/gdrive_card.js" defer></script>
+            <script src="search/main.js" defer></script>
 
 </body>
 

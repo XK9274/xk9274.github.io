@@ -57,27 +57,26 @@ async function fetchGitHubRepo(repoUrl, title, description, type) {
     }
 }
 
-
 function displayGitHubCard(repoData, userData) {
-  const githubCard = document.getElementById('github-card');
-  
-  githubCard.innerHTML = `
+    const githubCard = document.getElementById('github-card');
+
+    githubCard.innerHTML = `
     <a href="${repoData.html_url}" target="_blank" style="text-decoration: none; color: inherit;">
-      <div class="card-header">GitHub Repo</div>
-      <div class="card-content">
-        <img src="${userData.avatar_url}" alt="${userData.login}'s avatar">
-        <div class="card-details">
-          <p class="repo-name">${repoData.name}</p>
-          <p class="author-name">by ${userData.login}</p>
-          <p class="repo-description">${repoData.description}</p>
+        <div class="card-header">GitHub Repo</div>
+        <div class="card-content">
+            <img src="${userData.avatar_url}" alt="${userData.login}'s avatar">
+            <div class="card-details">
+                <p class="repo-name">${repoData.name}</p>
+                <p class="author-name">by ${userData.login}</p>
+                <p class="repo-description">${repoData.description}</p>
+            </div>
         </div>
-      </div>
     </a>
   `;
 }
 
 function displayRepoCard(repoData, userData, title, description, type) {
-    const centerContainer = document.querySelector('#repo-column .center-container-gen');
+    const centerContainer = document.querySelector('#repo-column .center-container-gen') || document.querySelector('.center-container-gen');
 
     const cardContainer = document.createElement('div');
     cardContainer.className = 'drac-app-container';
@@ -96,7 +95,7 @@ function displayRepoCard(repoData, userData, title, description, type) {
             </div>
             <div class="github-card streamlined-card">
                 <a href="${repoData.html_url}" target="_blank" style="text-decoration: none; color: inherit;">
-                    <div class="streamlined-card-header">GitHub Repo</div>
+                    <div class="streamlined-card-header">${repoData.name}</div>
                     <div class="streamlined-card-content">
                         <div class="streamlined-card-details">
                             <p class="streamlined-repo-name">${repoData.name}</p>
@@ -117,7 +116,7 @@ function displayRepoCard(repoData, userData, title, description, type) {
 }
 
 function displayManualCard(title, description, repoUrl, type) {
-    const centerContainer = document.querySelector('#repo-column .center-container-gen');
+    const centerContainer = document.querySelector('#repo-column .center-container-gen') || document.querySelector('.center-container-gen');
 
     const cardContainer = document.createElement('div');
     cardContainer.className = 'drac-app-container';
@@ -140,5 +139,3 @@ function displayManualCard(title, description, repoUrl, type) {
 
     centerContainer.appendChild(cardContainer);
 }
-
-

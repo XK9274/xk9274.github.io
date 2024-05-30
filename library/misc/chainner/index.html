@@ -82,7 +82,7 @@
                 <!-- GitHub link -->
                 <li class="drac-nav-item">
                     <a class="drac-nav-link" href="https://github.com/xk9274" target="_blank">
-                        <img src="/assets/images/icon/github-mark-white.png" alt="GitHub">
+                        <i class="fa fa-github-alt"></i>
                     </a>
                 </li>
                 
@@ -475,7 +475,12 @@
                     <!--  endblock -->
                    
                     <!-- block search -->
-                    <li class="nav-item">
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search" title="Type search term here" />
+	</form>
+</div>
                     </li>
                     <!--  endblock -->
 
@@ -537,28 +542,60 @@
 </section>
 
 <div class="center-container-gen">
-    <div class="github-card" id="github-card">
-        <!-- Content will be injected here by JavaScript -->
-    </div>
+    <section class="drac-text-cyan-green drac-text-subheader">
+        Get chaiNNer:
+    </section>
 </div>
 
-<section class="drac-text-cyan-green drac-text-subheader"> 
-    Image AI rescaling example:
-</section>
+<div class="center-container-gen">
+    <!-- GitHub Cards will be added here dynamically -->
+</div>
 
-<p>Model used: <a href="https://openmodeldb.info/models/4x-UniversalUpscalerV2-Sharp" target="_blank">https://openmodeldb.info/models/4x-UniversalUpscalerV2-Sharp</a></p>
+<p><br></p>
+<div class="center-container-gen">
+    <section class="drac-text-cyan-green drac-text-subheader">
+        Image AI rescaling example:
+    </section>
+</div>
 
-<p><img src="/assets/images/screenshots/chaiNNer_img_rescale.png" alt="ChaiNNer Image Rescale Example" class="drac-rounded-img-large"></p>
-<section class="drac-text-cyan-green drac-text-subheader"> 
-    Manager menu setup
-</section>
+<p><br></p>
+<p><div class="highlight"><pre><span></span><code>url:            https://openmodeldb.info/models/4x-UniversalUpscalerV2-Sharp
+name:           Universal Upscaler Model
+desc:           General Upscaler (x2/x3/x4)
+image:          https://icon.horse/icon/openmodeldb.info/
+favicon:        https://icon.horse/icon/openmodeldb.info/
+favicon_size:   13
+target:         new
+accent:         4C593FE0
+</code></pre></div>
+<br></p>
+<div class="center-container-gen">
+    <img src="/assets/images/screenshots/chaiNNer_img_rescale.png" alt="ChaiNNer Image Rescale Example" class="drac-rounded-img-large">
+</div>
 
-<p><img src="/assets/images/screenshots/chaiNNer_manager.png" alt="ChaiNNer Manager Setup" class="drac-rounded-img-small"></p>
-<script src="/assets/js/ghq.js"></script>
+<p><br></p>
+<div class="center-container-gen">
+    <section class="drac-text-cyan-green drac-text-subheader"> 
+        Manager menu setup
+    </section>
+</div>
+
+<div class="center-container-gen">
+    <img src="/assets/images/screenshots/chaiNNer_manager.png" alt="ChaiNNer Manager Setup" class="drac-rounded-img-small">
+</div>
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const repoUrl = 'https://api.github.com/repos/chaiNNer-org/chaiNNer';
-        fetchGitHubRepo(repoUrl);
+        const repoConfigs = [
+            {
+                url: 'https://api.github.com/repos/trimui/toolchain_sdk_smartpro',
+                title: 'chaiNNer',
+                description: 'Official chaiNNer Repo',
+                type: 'App'
+            },
+        ];
+
+        checkRateLimit(repoConfigs);
     });
 </script></p>
     </article>
@@ -585,6 +622,7 @@
         <script src="../../../assets/js/mkdocs.js"></script>
             <script src="../../../assets/js/ghq.js" defer></script>
             <script src="../../../assets/js/gdrive_card.js" defer></script>
+            <script src="../../../search/main.js" defer></script>
 
 </body>
 

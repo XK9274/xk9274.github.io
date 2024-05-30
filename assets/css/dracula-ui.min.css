@@ -477,7 +477,7 @@
   --pink: #ff80bf;
   --pinkSecondary: #ffcce6;
   --pinkLight: rgba(255, 128, 191, 0.05);
-  --purple: #80ffea;
+  --purple: #ab39b8;
   --purpleSecondary: #d4ccff;
   --purpleLight: rgba(149, 128, 255, 0.05);
   --red: #ff9580;
@@ -2420,8 +2420,8 @@ code {
   display: flex;
   flex-direction: column;
   border-radius: var(--rounded-lg);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 300px;
 }
 
@@ -2615,6 +2615,7 @@ code {
   border-radius: var(--rounded-lg);
   font-family: 'Fira Code', monospace;
   max-width: 450px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
   overflow: hidden;
 }
 
@@ -2654,6 +2655,7 @@ code {
 
 .drac-info-panel .drac-text p {
   margin: 0;
+  font-size: calc(var(--font-xs) - 2px); 
 }
 
 .drac-terminal-background {
@@ -2663,6 +2665,7 @@ code {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
 }
 
 .drac-terminal-panel {
@@ -2846,9 +2849,9 @@ code {
 .drac-image-card-wrapper {
   display: flex;
   flex-direction: column;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
   border-radius: var(--rounded-lg);
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 400px;
   margin: var(--spacing-sm);
 }
@@ -2905,7 +2908,7 @@ code {
   display: flex;
   flex-direction: column;
   border-radius: var(--rounded-lg);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.19); 
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
   overflow: hidden;
   position: relative;
   background-size: cover;
@@ -2972,7 +2975,7 @@ code {
 .github-card {
     background-color: var(--black);
     border-radius: var(--rounded-lg);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.19); 
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
     max-width: 280px; 
     overflow: hidden;
     display: flex;
@@ -3036,7 +3039,7 @@ code {
 .google-drive-card {
     background-color: var(--black);
     border-radius: var(--rounded-lg);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.19); 
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
     max-width: 360px; 
     width: 100%;
     overflow: hidden;
@@ -3112,7 +3115,7 @@ code {
     flex-direction: column;
     border-radius: var(--rounded-lg);
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.19); 
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
     margin: var(--spacing-xs); 
     width: 360px; 
 }
@@ -3204,7 +3207,7 @@ code {
     display: flex;
     flex-direction: column;
     border-radius: var(--rounded-lg);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.19); 
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
     background-color: var(--greyLight);
     max-width: 400px;
     min-width: 400px;

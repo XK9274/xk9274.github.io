@@ -731,7 +731,7 @@ code {
     padding-left: calc(var(--bs-gutter-x) * .5);
     margin-right: auto;
     margin-left: auto;
-    scale: 0.8;
+    scale: 0.9;
 }
 
 .navbar {
@@ -2449,7 +2449,7 @@ code {
     align-items: center;
     justify-content: center;
     width: 100%;
-    transform: scale(0.85);
+    transform: scale(0.9);
     transform-origin: top left; 
 }
 
@@ -2467,7 +2467,7 @@ code {
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
   overflow: hidden;
   max-width: 200px;
-  scale: 0.7;
+  scale: 0.9;
 }
 
 .card-images {
@@ -2576,7 +2576,7 @@ code {
   position: relative;
   color: var(--white);
   margin-left: var(--spacing-sm); 
-  scale: 0.8;
+  scale: 0.9;
 }
 
 .drac-summary-box-wrapper::before {
@@ -2616,9 +2616,9 @@ code {
 }
 .drac-text-header {
   font-family: 'Fira Code', monospace;
-  font-size: var(--font-2xl);
+  font-size: var(--font-3xl);
   font-weight: 700; 
-  line-height: var(--line-height-xs);
+  line-height: var(--line-height-sm);
   text-align: center; 
   margin: var(--spacing-md) 0; 
 }
@@ -2757,7 +2757,7 @@ code {
   justify-content: center;
   flex-wrap: wrap;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), 4px 6px 8px rgba(0, 0, 0, 0.25); 
-  scale: 0.8;
+  scale: 0.9;
 }
 
 .drac-terminal-panel {
@@ -2884,7 +2884,7 @@ code {
   list-style: none;
   padding: 0;
   margin: 0;
-  scale: 0.88;
+  scale: 0.9;
 }
 
 .drac-nav-item {
@@ -3308,7 +3308,7 @@ code {
     overflow: hidden;
     margin: var(--spacing-xs) 0;
     transition: background-color 0.3s ease; 
-    scale: 0.85;
+    scale: 0.9;
 }
 
 .drac-link-embed-title-bar {
